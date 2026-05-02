@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Project Detail | A.N Power Engineering & Services</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+.pd-hero-img { width:100%; height:420px; object-fit:cover; border-radius:var(--radius); border:1px solid var(--border); display:block; }
+.pd-hero-img-fallback { width:100%; height:420px; background:var(--dark3); border-radius:var(--radius); border:1px solid var(--border); display:flex; align-items:center; justify-content:center; font-size:6rem; }
+.pd-layout { display:grid; grid-template-columns:1.6fr 1fr; gap:50px; align-items:start; margin-top:50px; }
+.pd-meta { background:var(--glass2); border:1px solid var(--border); border-radius:var(--radius); padding:30px; position:sticky; top:90px; }
+.pd-meta h4 { font-family:'Barlow Condensed',sans-serif; font-size:1rem; font-weight:700; letter-spacing:1px; text-transform:uppercase; color:var(--blue); margin-bottom:18px; }
+.pd-meta-row { display:flex; justify-content:space-between; padding:12px 0; border-bottom:1px solid var(--border); font-size:0.87rem; }
+.pd-meta-row:last-child { border-bottom:none; }
+.pd-meta-row span:first-child { color:var(--muted); }
+.pd-meta-row span:last-child { color:var(--white); font-weight:500; text-align:right; }
+.img-gallery { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:30px; }
+.img-gallery img { width:100%; height:180px; object-fit:cover; border-radius:8px; border:1px solid var(--border); cursor:pointer; transition:var(--transition); }
+.img-gallery img:hover { transform:scale(1.02); border-color:rgba(14,165,233,0.4); }
+.pd-tags { display:flex; gap:8px; flex-wrap:wrap; margin:16px 0; }
+.pd-tag-badge { padding:4px 14px; border-radius:20px; font-size:0.75rem; font-weight:600; background:rgba(14,165,233,0.1); border:1px solid rgba(14,165,233,0.2); color:var(--blue3); }
+@media(max-width:900px){ .pd-layout{grid-template-columns:1fr} .pd-meta{position:static} .img-gallery{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<div id="preloader"><div class="pre-logo">A·N POWER</div><div class="pre-bar"><div class="pre-bar-fill"></div></div></div>
+<nav id="navbar">
+  <a href="index.html" class="nav-brand"><svg class="brand-icon" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/><path d="M20 6L8 20h9v14l12-14h-9V6z" fill="#0ea5e9" stroke="#38bdf8" stroke-width="0.5"/></svg><div class="brand-text"><div class="top">A.N Power</div><div class="sub">Engineering & Services</div></div></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li class="has-dropdown"><a href="services.html">Services</a><div class="dropdown"><a href="service-detail.html?s=generator">Generator Sales & Rental</a><a href="service-detail.html?s=solar">Solar Energy Systems</a><a href="service-detail.html?s=elevator">Elevators & Escalators</a><a href="service-detail.html?s=ats">ATS Panels</a><a href="service-detail.html?s=maintenance">Maintenance Contracts</a><a href="service-detail.html?s=rental">Rental Services</a></div></li>
+    <li class="has-dropdown"><a href="projects.html">Projects</a><div class="dropdown"><a href="projects.html?cat=electrical">Electrical Projects</a><a href="projects.html?cat=industrial">Industrial Projects</a><a href="projects.html?cat=maintenance">Maintenance Projects</a></div></li>
+    <li><a href="clients.html">Clients</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html#quote" class="btn-quote">Get a Quote</a>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav"><div class="mob-section"><div class="mob-label">Navigation</div><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="clients.html">Clients</a><a href="careers.html">Careers</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div><a href="contact.html#quote" class="btn btn-primary btn-quote">Get a Quote</a></div>
+
+<section class="page-hero">
+  <div class="page-hero-inner container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="projects.html">Projects</a><span>/</span><span>Project Detail</span></div>
+    <div class="tag">Case Study</div>
+    <h1>500kVA Generator <span>Installation</span></h1>
+    <p>Commercial Complex — DHA Phase 6, Karachi</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="reveal">
+      <img class="pd-hero-img" src="images/generators/WhatsApp-Image-2026-04-29-at-11.45.02-PM.jpeg" alt="500kVA Generator Project" onerror="this.style.display='none';document.getElementById('pd-fallback').style.display='flex'"/>
+      <div id="pd-fallback" class="pd-hero-img-fallback" style="display:none"><i class="fa fa-bolt" style="color:#0ea5e9;font-size:4rem"></i></div>
+    </div>
+
+    <div class="pd-layout">
+      <!-- Left: Description -->
+      <div class="reveal-left">
+        <div class="pd-tags">
+          <span class="pd-tag-badge">Generator</span>
+          <span class="pd-tag-badge">Industrial</span>
+          <span class="pd-tag-badge">Completed</span>
+        </div>
+        <h2 class="section-title" style="font-size:2rem">Project <span>Overview</span></h2>
+        <div class="divider"></div>
+        <p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">This project involved the supply, delivery, installation, and commissioning of a 500kVA Cummins diesel generator for a large commercial complex in DHA Phase 6, Karachi. The client required a reliable standby power solution capable of supporting the entire building load — including lifts, HVAC, commercial units, and common area lighting — during KESC outages.</p>
+        <p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">The project scope included civil foundation work, acoustic enclosure fabrication, a 500-litre sub-base fuel tank, automatic transfer switch panel integration, earthing system, and full load testing at site. The system was designed for an automatic switchover time of less than 10 seconds from utility failure.</p>
+        <p style="color:var(--muted);line-height:1.85;font-size:0.97rem">The installation was completed within 12 working days, on schedule and within budget. A 2-year annual maintenance contract was also signed at project completion, ensuring the system remains in peak condition.</p>
+
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:700;margin-top:32px;margin-bottom:16px">Challenges & Solutions</h3>
+        <div style="display:flex;flex-direction:column;gap:12px">
+          <div style="background:var(--glass2);border:1px solid var(--border);border-radius:8px;padding:16px;display:flex;gap:14px;align-items:flex-start">
+            <span style="flex-shrink:0"><i class="fa fa-exclamation-triangle" style="color:var(--blue);font-size:1.1rem"></i></span>
+            <div><strong style="font-size:0.9rem;display:block;margin-bottom:4px">Limited Installation Space</strong><span style="font-size:0.84rem;color:var(--muted)">The basement plant room had restricted access. We coordinated a custom crane lift to position the generator precisely, completing the placement in under 4 hours.</span></div>
+          </div>
+          <div style="background:var(--glass2);border:1px solid var(--border);border-radius:8px;padding:16px;display:flex;gap:14px;align-items:flex-start">
+            <span style="flex-shrink:0"><i class="fa fa-exclamation-triangle" style="color:var(--blue);font-size:1.1rem"></i></span>
+            <div><strong style="font-size:0.9rem;display:block;margin-bottom:4px">Complex Load Synchronization</strong><span style="font-size:0.84rem;color:var(--muted)">Existing building electrical system required custom ATS programming to manage lift priority loads and prevent inrush current issues on startup.</span></div>
+          </div>
+        </div>
+
+        <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:700;margin-top:32px;margin-bottom:16px">Project Images</h3>
+        <div class="img-gallery">
+          <img src="images/generators/WhatsApp-Image-2026-04-29-at-11.45.02-PM.jpeg" alt="Generator" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&q=80'"/>
+          <img src="images/generators/WhatsApp-Image-2026-04-29-at-11.45.03-PM.jpeg" alt="Generator" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467533003447-e295ff1b0435?w=400&q=80'"/>
+          <img src="images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.30-PM.jpeg" alt="ATS Panel" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80'"/>
+          <img src="images/generators/WhatsApp-Image-2026-04-29-at-11.50.17-PM.jpeg" alt="Generator" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80'"/>
+        </div>
+      </div>
+
+      <!-- Right: Meta -->
+      <div class="reveal-right">
+        <div class="pd-meta">
+          <h4>Project Details</h4>
+          <div class="pd-meta-row"><span>Project Type</span><span>Generator Installation</span></div>
+          <div class="pd-meta-row"><span>Capacity</span><span>500 kVA</span></div>
+          <div class="pd-meta-row"><span>Brand</span><span>Cummins</span></div>
+          <div class="pd-meta-row"><span>Client</span><span>Commercial Complex</span></div>
+          <div class="pd-meta-row"><span>Location</span><span>DHA Phase 6, Karachi</span></div>
+          <div class="pd-meta-row"><span>Duration</span><span>12 Working Days</span></div>
+          <div class="pd-meta-row"><span>Completion</span><span>March 2024</span></div>
+          <div class="pd-meta-row"><span>Status</span><span style="color:#10b981"><i class="fa fa-check-circle" style="margin-right:4px"></i>Completed</span></div>
+          <a href="contact.html#quote" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:20px"><i class="fa fa-bolt"></i> Similar Project Quote</a>
+        </div>
+        <div style="background:var(--glass2);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-top:20px">
+          <h4 style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;margin-bottom:14px">Scope of Work</h4>
+          <ul style="display:flex;flex-direction:column;gap:8px">
+            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>Generator supply & transport</li>
+            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>Civil foundation & mounting</li>
+            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>Acoustic enclosure</li>
+            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>500L sub-base fuel tank</li>
+            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>ATS panel integration</li>
+            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>Earthing system</li>
+            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>Load testing & commissioning</li>
+            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>Annual maintenance contract</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Projects -->
+    <div style="margin-top:60px">
+      <h3 class="section-title" style="font-size:1.8rem">More <span>Projects</span></h3>
+      <div class="divider"></div>
+      <div class="grid-3" style="margin-top:24px">
+        <div class="project-card reveal d1">
+          <img src="images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.30-PM.jpeg" alt="ATS Panel" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80'"/>
+          <div class="project-overlay"><div class="proj-tag">Electrical</div><h3>ATS Panel Integration</h3><p>Clifton Commercial Building</p></div>
+        </div>
+        <div class="project-card reveal d2">
+          <img src="" alt="Solar" onerror="this.src='https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=600&q=80'"/>
+          <div class="project-overlay"><div class="proj-tag">Solar</div><h3>100kW Solar System</h3><p>SITE Industrial Warehouse</p></div>
+        </div>
+        <div class="project-card reveal d3">
+          <img src="images/generators/WhatsApp-Image-2026-04-29-at-11.45.03-PM-1.jpeg" alt="Generator" onerror="this.src='https://images.unsplash.com/photo-1467533003447-e295ff1b0435?w=600&q=80'"/>
+          <div class="project-overlay"><div class="proj-tag">Generator</div><h3>200kVA Hospital Generator</h3><p>Gulshan-e-Iqbal</p></div>
+        </div>
+      </div>
+      <div class="text-center" style="margin-top:36px">
+        <a href="projects.html" class="btn btn-outline"><i class="fa fa-th"></i> All Projects</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="footer-grid container"><div class="footer-brand"><a href="index.html" class="nav-brand"><svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/><path d="M20 6L8 20h9v14l12-14h-9V6z" fill="#0ea5e9"/></svg><div class="brand-text"><div class="top">A.N Power</div><div class="sub">Engineering & Services</div></div></a><p>Karachi's trusted power engineering company since 2009.</p><div class="socials"><a href="#"><i class="fab fa-whatsapp"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="mailto:anpowerengineering@hotmail.com"><i class="fa fa-envelope"></i></a></div></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="careers.html">Careers</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+  <div class="footer-col"><h4>Services</h4><ul><li><a href="service-detail.html?s=generator">Generator Sales</a></li><li><a href="service-detail.html?s=solar">Solar Systems</a></li><li><a href="service-detail.html?s=elevator">Elevators</a></li><li><a href="service-detail.html?s=ats">ATS Panels</a></li><li><a href="service-detail.html?s=maintenance">Maintenance</a></li><li><a href="service-detail.html?s=rental">Rental</a></li></ul></div>
+  <div class="footer-col"><h4>Contact</h4><ul class="footer-contact"><li><i class="fa fa-mobile-alt"></i><span>0301-2499709</span></li><li><i class="fa fa-mobile-alt"></i><span>0302-8289709</span></li><li><i class="fa fa-envelope"></i><a href="mailto:anpowerengineering@hotmail.com">anpowerengineering@hotmail.com</a></li><li><i class="fa fa-map-marker-alt"></i><span>Shop No 3/43/C, 24th Tauheed Commercial Street, Phase 5 DHA, Karachi</span></li></ul></div></div>
+  <div class="footer-bottom container"><span>© 2009–2026 <span>A.N Power Engineering & Services</span> | All Rights Reserved</span></div>
+</footer>
+<div id="back-top"><i class="fa fa-chevron-up"></i></div>
+<a id="wa-float" href="https://wa.me/923028289709" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<script src="script.js"></script>
+</body>
+</html>

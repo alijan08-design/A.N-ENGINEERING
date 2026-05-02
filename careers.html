@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Careers | A.N Power Engineering & Services</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+.careers-layout { display:grid; grid-template-columns:1.2fr 1fr; gap:50px; align-items:start; }
+.jobs-list { display:flex; flex-direction:column; gap:16px; }
+.perks-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:50px; }
+.perk-card { background:var(--glass2); border:1px solid var(--border); border-radius:var(--radius); padding:24px; display:flex; gap:16px; align-items:flex-start; transition:var(--transition); }
+.perk-card:hover { border-color:rgba(14,165,233,0.3); transform:translateY(-2px); }
+.perk-icon { font-size:1.2rem; flex-shrink:0; width:44px; height:44px; background:rgba(14,165,233,0.1); border:1px solid rgba(14,165,233,0.2); border-radius:8px; display:flex; align-items:center; justify-content:center; }
+.perk-card h4 { font-family:'Barlow Condensed',sans-serif; font-size:1rem; font-weight:700; margin-bottom:4px; }
+.perk-card p { font-size:0.82rem; color:var(--muted); line-height:1.5; }
+@media(max-width:900px){ .careers-layout{grid-template-columns:1fr} .perks-grid{grid-template-columns:1fr} }
+/* Fix: select option dropdown background on dark theme */
+select option { background-color: #1a2332; color: #e2e8f0; }
+select { color: #e2e8f0; }
+</style>
+</head>
+<body>
+<div id="preloader"><div class="pre-logo">A·N POWER</div><div class="pre-bar"><div class="pre-bar-fill"></div></div></div>
+<nav id="navbar">
+  <a href="index.html" class="nav-brand"><svg class="brand-icon" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/><path d="M20 6L8 20h9v14l12-14h-9V6z" fill="#0ea5e9" stroke="#38bdf8" stroke-width="0.5"/></svg><div class="brand-text"><div class="top">A.N Power</div><div class="sub">Engineering & Services</div></div></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li class="has-dropdown"><a href="services.html">Services</a><div class="dropdown"><a href="service-detail.html?s=generator">Generator Sales & Rental</a><a href="service-detail.html?s=solar">Solar Energy Systems</a><a href="service-detail.html?s=elevator">Elevators & Escalators</a><a href="service-detail.html?s=ats">ATS Panels</a><a href="service-detail.html?s=maintenance">Maintenance Contracts</a><a href="service-detail.html?s=rental">Rental Services</a></div></li>
+    <li class="has-dropdown"><a href="projects.html">Projects</a><div class="dropdown"><a href="projects.html?cat=electrical">Electrical Projects</a><a href="projects.html?cat=industrial">Industrial Projects</a><a href="projects.html?cat=maintenance">Maintenance Projects</a></div></li>
+    <li><a href="clients.html">Clients</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html#quote" class="btn-quote">Get a Quote</a>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav"><div class="mob-section"><div class="mob-label">Navigation</div><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="clients.html">Clients</a><a href="careers.html">Careers</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div><a href="contact.html#quote" class="btn btn-primary btn-quote">Get a Quote</a></div>
+
+<section class="page-hero">
+  <div class="page-hero-inner container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Careers</span></div>
+    <div class="tag">Join the Team</div>
+    <h1>Build Your Career <span>With Us</span></h1>
+    <p>Work with Karachi's leading power engineering company and grow your career alongside Pakistan's best engineers.</p>
+  </div>
+</section>
+
+<!-- Why join us -->
+<section class="section">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="tag">Why A.N Power</div>
+      <h2 class="section-title">Why Work <span>With Us?</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="perks-grid">
+      <div class="perk-card reveal d1"><div class="perk-icon"><i class="fa fa-chart-line" style="color:#0ea5e9"></i></div><div><h4>Growth Opportunities</h4><p>Regular promotions, skill development, and a clear career progression path for all team members.</p></div></div>
+      <div class="perk-card reveal d2"><div class="perk-icon"><i class="fa fa-graduation-cap" style="color:#0ea5e9"></i></div><div><h4>Training & Development</h4><p>Ongoing technical training, certifications, and manufacturer workshops to keep your skills sharp.</p></div></div>
+      <div class="perk-card reveal d3"><div class="perk-icon"><i class="fa fa-dollar-sign" style="color:#0ea5e9"></i></div><div><h4>Competitive Salaries</h4><p>Market-leading compensation packages with performance bonuses and annual increments.</p></div></div>
+      <div class="perk-card reveal d4"><div class="perk-icon"><i class="fa fa-heartbeat" style="color:#0ea5e9"></i></div><div><h4>Health Benefits</h4><p>Medical coverage for employees and eligible dependents.</p></div></div>
+      <div class="perk-card reveal d1"><div class="perk-icon"><i class="fa fa-users" style="color:#0ea5e9"></i></div><div><h4>Collaborative Culture</h4><p>A supportive, team-oriented work environment where every contribution is valued.</p></div></div>
+      <div class="perk-card reveal d2"><div class="perk-icon"><i class="fa fa-wrench" style="color:#0ea5e9"></i></div><div><h4>Real-World Projects</h4><p>Work on meaningful, technically challenging projects across Karachi every day.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- Open Positions + Apply Form -->
+<section class="section" style="background:var(--dark2);padding:80px 5%">
+  <div class="container">
+    <div class="careers-layout">
+      <!-- Jobs -->
+      <div>
+        <div class="reveal">
+          <div class="tag">Open Positions</div>
+          <h2 class="section-title">Current <span>Openings</span></h2>
+          <div class="divider"></div>
+        </div>
+        <div class="jobs-list" style="margin-top:8px">
+          <div class="job-card reveal d1">
+            <div class="job-header">
+              <h3 class="job-title">Generator Technician</h3>
+              <span class="job-badge">Full Time</span>
+            </div>
+            <div class="job-meta">
+              <span><i class="fa fa-map-marker-alt"></i> DHA, Karachi</span>
+              <span><i class="fa fa-briefcase"></i> 2–5 Years Exp.</span>
+              <span><i class="fa fa-tools"></i> Technical</span>
+            </div>
+            <p style="font-size:0.87rem;color:var(--muted);line-height:1.65">Experienced generator technician for installation, servicing, and maintenance of diesel generators (10kVA–2000kVA). Must be able to diagnose and repair engine and alternator faults.</p>
+          </div>
+          <div class="job-card reveal d2">
+            <div class="job-header">
+              <h3 class="job-title">Solar Installation Engineer</h3>
+              <span class="job-badge">Full Time</span>
+            </div>
+            <div class="job-meta">
+              <span><i class="fa fa-map-marker-alt"></i> Karachi (Field)</span>
+              <span><i class="fa fa-briefcase"></i> 1–3 Years Exp.</span>
+              <span><i class="fa fa-solar-panel"></i> Solar</span>
+            </div>
+            <p style="font-size:0.87rem;color:var(--muted);line-height:1.65">B.E. or DAE Electrical engineer for solar panel installation, inverter commissioning, and electrical integration. Experience with on-grid and off-grid systems preferred.</p>
+          </div>
+          <div class="job-card reveal d3">
+            <div class="job-header">
+              <h3 class="job-title">Elevator Service Technician</h3>
+              <span class="job-badge">Full Time</span>
+            </div>
+            <div class="job-meta">
+              <span><i class="fa fa-map-marker-alt"></i> Karachi</span>
+              <span><i class="fa fa-briefcase"></i> 2–4 Years Exp.</span>
+              <span><i class="fa fa-tools"></i> Technical</span>
+            </div>
+            <p style="font-size:0.87rem;color:var(--muted);line-height:1.65">Technician for elevator and escalator maintenance, fault diagnosis, and repair. Experience with passenger and freight elevator systems required.</p>
+          </div>
+          <div class="job-card reveal d4">
+            <div class="job-header">
+              <h3 class="job-title">Sales Executive</h3>
+              <span class="job-badge">Full Time</span>
+            </div>
+            <div class="job-meta">
+              <span><i class="fa fa-map-marker-alt"></i> DHA, Karachi</span>
+              <span><i class="fa fa-briefcase"></i> 1–3 Years Exp.</span>
+              <span><i class="fa fa-handshake"></i> Sales</span>
+            </div>
+            <p style="font-size:0.87rem;color:var(--muted);line-height:1.65">Dynamic sales professional to handle generator, solar, and service contract sales. Strong communication, client follow-up skills, and technical understanding preferred.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Apply Form -->
+      <div class="reveal-right">
+        <div class="apply-form">
+          <h3>Apply Now</h3>
+          <p>Submit your application and our HR team will contact you within 3 working days.</p>
+          <form class="contact-form js-form">
+            <label>Full Name *</label>
+            <input type="text" placeholder="Your full name" required/>
+            <label>Phone Number *</label>
+            <input type="tel" placeholder="+92 3XX XXXXXXX" required/>
+            <label>Email Address</label>
+            <input type="email" placeholder="your@email.com"/>
+            <label>Position Applying For *</label>
+            <select required>
+              <option value="">Select Position</option>
+              <option>Generator Technician</option>
+              <option>Solar Installation Engineer</option>
+              <option>Elevator Service Technician</option>
+              <option>Sales Executive</option>
+              <option>Other</option>
+            </select>
+            <label>Years of Experience</label>
+            <select>
+              <option value="">Select</option>
+              <option>Fresh Graduate</option>
+              <option>Less than 1 year</option>
+              <option>1–2 years</option>
+              <option>2–5 years</option>
+              <option>5+ years</option>
+            </select>
+            <label>Cover Letter / Message</label>
+            <textarea placeholder="Tell us about yourself and why you want to join A.N Power..." rows="4"></textarea>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center"><i class="fa fa-paper-plane"></i> Submit Application</button>
+            <div class="form-success"><i class="fa fa-check-circle" style="color:#22c55e;margin-right:6px"></i> Application submitted! We'll be in touch within 3 working days.</div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="footer-grid container"><div class="footer-brand"><a href="index.html" class="nav-brand"><svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/><path d="M20 6L8 20h9v14l12-14h-9V6z" fill="#0ea5e9"/></svg><div class="brand-text"><div class="top">A.N Power</div><div class="sub">Engineering & Services</div></div></a><p>Karachi's trusted power engineering company since 2009.</p><div class="socials"><a href="#"><i class="fab fa-whatsapp"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="mailto:anpowerengineering@hotmail.com"><i class="fa fa-envelope"></i></a></div></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="careers.html">Careers</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+  <div class="footer-col"><h4>Services</h4><ul><li><a href="service-detail.html?s=generator">Generator Sales</a></li><li><a href="service-detail.html?s=solar">Solar Systems</a></li><li><a href="service-detail.html?s=elevator">Elevators</a></li><li><a href="service-detail.html?s=ats">ATS Panels</a></li><li><a href="service-detail.html?s=maintenance">Maintenance</a></li><li><a href="service-detail.html?s=rental">Rental</a></li></ul></div>
+  <div class="footer-col"><h4>Contact</h4><ul class="footer-contact"><li><i class="fa fa-mobile-alt"></i><span>0301-2499709</span></li><li><i class="fa fa-mobile-alt"></i><span>0302-8289709</span></li><li><i class="fa fa-envelope"></i><a href="mailto:anpowerengineering@hotmail.com">anpowerengineering@hotmail.com</a></li><li><i class="fa fa-map-marker-alt"></i><span>Shop No 3/43/C, 24th Tauheed Commercial Street, Phase 5 DHA, Karachi</span></li></ul></div></div>
+  <div class="footer-bottom container"><span>© 2009–2026 <span>A.N Power Engineering & Services</span> | All Rights Reserved</span></div>
+</footer>
+<div id="back-top"><i class="fa fa-chevron-up"></i></div>
+<a id="wa-float" href="https://wa.me/923028289709" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<script src="script.js"></script>
+</body>
+</html>

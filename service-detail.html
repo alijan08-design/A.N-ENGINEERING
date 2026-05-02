@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Service Detail | A.N Power Engineering & Services</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+.sd-layout { display:grid; grid-template-columns:1.6fr 1fr; gap:60px; align-items:start; }
+.sd-img { border-radius:var(--radius); overflow:hidden; border:1px solid var(--border); }
+.sd-img img { width:100%; height:380px; object-fit:cover; display:block; }
+.sd-img-placeholder { width:100%; height:380px; background:var(--dark3); display:flex; align-items:center; justify-content:center; font-size:4rem; }
+.sd-sidebar { position:sticky; top:90px; }
+.sd-sidebar .quote-box { background:var(--glass2); border:1px solid var(--border); border-radius:var(--radius); padding:30px; margin-bottom:20px; }
+.sd-sidebar .quote-box h4 { font-family:'Barlow Condensed',sans-serif; font-size:1.2rem; font-weight:700; margin-bottom:16px; }
+.sd-sidebar .quote-box input, .sd-sidebar .quote-box select, .sd-sidebar .quote-box textarea {
+  width:100%; padding:11px 14px; background:var(--glass2); border:1px solid var(--border); border-radius:6px;
+  color:var(--white); font-family:'Barlow',sans-serif; font-size:0.85rem; margin-bottom:12px; outline:none; transition:var(--transition);
+}
+.sd-sidebar .quote-box input:focus, .sd-sidebar .quote-box select:focus { border-color:var(--blue); }
+.sd-sidebar .quick-contact { background:var(--glass2); border:1px solid var(--border); border-radius:var(--radius); padding:24px; }
+.sd-sidebar .quick-contact a { display:flex; align-items:center; gap:12px; padding:10px 0; color:var(--muted); font-size:0.88rem; border-bottom:1px solid var(--border); transition:var(--transition); }
+.sd-sidebar .quick-contact a:last-child { border-bottom:none; }
+.sd-sidebar .quick-contact a:hover { color:var(--blue2); padding-left:8px; }
+select option { background-color: #0f1c2e; color: #e2e8f0; }
+select { color: #e2e8f0; }
+.sd-sidebar .quick-contact a i { color:var(--blue); width:20px; }
+.benefits-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-top:24px; }
+.benefit-item { display:flex; align-items:flex-start; gap:12px; padding:16px; background:var(--glass2); border:1px solid var(--border); border-radius:8px; }
+.benefit-item i { color:var(--blue); margin-top:2px; }
+.benefit-item p { font-size:0.85rem; color:var(--muted); line-height:1.5; }
+.related-services { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; margin-top:30px; }
+@media(max-width:900px){ .sd-layout{grid-template-columns:1fr} .sd-sidebar{position:static} .benefits-grid{grid-template-columns:1fr} .related-services{grid-template-columns:1fr 1fr} }
+@media(max-width:500px){ .related-services{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<div id="preloader"><div class="pre-logo">A·N POWER</div><div class="pre-bar"><div class="pre-bar-fill"></div></div></div>
+<nav id="navbar">
+  <a href="index.html" class="nav-brand"><svg class="brand-icon" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/><path d="M20 6L8 20h9v14l12-14h-9V6z" fill="#0ea5e9" stroke="#38bdf8" stroke-width="0.5"/></svg><div class="brand-text"><div class="top">A.N Power</div><div class="sub">Engineering & Services</div></div></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li class="has-dropdown"><a href="services.html">Services</a><div class="dropdown"><a href="service-detail.html?s=generator">Generator Sales & Rental</a><a href="service-detail.html?s=solar">Solar Energy Systems</a><a href="service-detail.html?s=elevator">Elevators & Escalators</a><a href="service-detail.html?s=ats">ATS Panels</a><a href="service-detail.html?s=maintenance">Maintenance Contracts</a><a href="service-detail.html?s=rental">Rental Services</a></div></li>
+    <li class="has-dropdown"><a href="projects.html">Projects</a><div class="dropdown"><a href="projects.html?cat=electrical">Electrical Projects</a><a href="projects.html?cat=industrial">Industrial Projects</a><a href="projects.html?cat=maintenance">Maintenance Projects</a></div></li>
+    <li><a href="clients.html">Clients</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html#quote" class="btn-quote">Get a Quote</a>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav"><div class="mob-section"><div class="mob-label">Navigation</div><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="clients.html">Clients</a><a href="careers.html">Careers</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div><a href="contact.html#quote" class="btn btn-primary btn-quote">Get a Quote</a></div>
+
+<section class="page-hero" id="sd-hero">
+  <div class="page-hero-inner container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="services.html">Services</a><span>/</span><span id="breadcrumb-name">Service Detail</span></div>
+    <div class="tag" id="sd-tag">Engineering Service</div>
+    <h1 id="sd-title">Service <span>Details</span></h1>
+    <p id="sd-subtitle">Complete information about this service offering.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sd-layout">
+      <div>
+        <div class="sd-img reveal-left" id="sd-img-wrap">
+          <div class="sd-img-placeholder" id="sd-icon"><i class="fa fa-bolt" style="color:#0ea5e9"></i></div>
+        </div>
+        <div style="margin-top:36px">
+          <h2 class="section-title" id="sd-heading">Service <span>Overview</span></h2>
+          <div class="divider"></div>
+          <p id="sd-body" style="color:var(--muted);line-height:1.85;font-size:0.97rem"></p>
+          <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:700;margin-top:32px;margin-bottom:16px">Key Benefits</h3>
+          <div class="benefits-grid" id="sd-benefits"></div>
+        </div>
+        <div style="margin-top:40px">
+          <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:700;margin-bottom:16px">What's Included</h3>
+          <ul id="sd-includes" style="display:grid;grid-template-columns:1fr 1fr;gap:10px"></ul>
+        </div>
+      </div>
+      <div class="sd-sidebar reveal-right">
+        <div class="quote-box">
+          <h4>Request a Quote</h4>
+          <form class="js-form">
+            <input type="text" placeholder="Your Name" required/>
+            <input type="tel" placeholder="Phone Number" required/>
+            <input type="email" placeholder="Email Address"/>
+            <select id="sd-service-select">
+              <option value="">Select Service</option>
+              <option value="generator">Generator Sales</option>
+              <option value="rental">Generator Rental</option>
+              <option value="solar">Solar System</option>
+              <option value="elevator">Elevator Installation</option>
+              <option value="ats">ATS Panel</option>
+              <option value="maintenance">Maintenance Contract</option>
+            </select>
+            <textarea placeholder="Describe your requirement..." rows="4"></textarea>
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center"><i class="fa fa-bolt"></i> Submit Request</button>
+            <div class="form-success"><i class="fa fa-check-circle" style="color:#22c55e;margin-right:6px"></i> Request submitted! We'll call you within 2 hours.</div>
+          </form>
+        </div>
+        <div class="quick-contact">
+          <h4 style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;margin-bottom:12px">Quick Contact</h4>
+          <a href="tel:03012499709"><i class="fa fa-mobile-alt"></i>0301-2499709</a>
+          <a href="tel:03022499709"><i class="fa fa-mobile-alt"></i>0302-8289709</a>
+          <a href="https://wa.me/923028289709" target="_blank"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+          <a href="mailto:anpowerengineering@hotmail.com"><i class="fa fa-envelope"></i>Email Us</a>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:60px">
+      <h3 class="section-title" style="font-size:1.8rem">Other <span>Services</span></h3>
+      <div class="divider"></div>
+      <div class="related-services">
+        <a href="service-detail.html?s=generator" class="service-card">
+          <div class="svc-card-img"><img src="images/generators/WhatsApp-Image-2026-04-29-at-11.45.02-PM.jpeg" alt="Generator"/></div>
+          <div class="svc-card-body">
+            <div class="service-icon"><i class="fa fa-bolt"></i></div><h3>Generator Sales & Rental</h3><p>10kVA–2000kVA new & used generators with full support.</p>
+          </div>
+        </a>
+        <a href="service-detail.html?s=solar" class="service-card">
+          <div class="svc-card-img"><img src="images/solar/WhatsApp-Image-2026-04-29-at-11.41.52-PM.jpeg" alt="Solar"/></div>
+          <div class="svc-card-body">
+            <div class="service-icon"><i class="fa fa-solar-panel"></i></div><h3>Solar Energy Systems</h3><p>Rooftop and ground-mount solar installations for all scales.</p>
+          </div>
+        </a>
+        <a href="service-detail.html?s=elevator" class="service-card">
+          <div class="svc-card-img"><img src="images/elevators/WhatsApp-Image-2026-04-29-at-11.39.15-PM.jpeg" alt="Elevators"/></div>
+          <div class="svc-card-body">
+            <div class="service-icon"><i class="fa fa-building"></i></div><h3>Elevators & Escalators</h3><p>Supply, installation, and maintenance contracts.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="footer-grid container"><div class="footer-brand"><a href="index.html" class="nav-brand"><svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/><path d="M20 6L8 20h9v14l12-14h-9V6z" fill="#0ea5e9"/></svg><div class="brand-text"><div class="top">A.N Power</div><div class="sub">Engineering & Services</div></div></a><p>Karachi's trusted power engineering company since 2009.</p><div class="socials"><a href="#"><i class="fab fa-whatsapp"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="mailto:anpowerengineering@hotmail.com"><i class="fa fa-envelope"></i></a></div></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+  <div class="footer-col"><h4>Services</h4><ul><li><a href="service-detail.html?s=generator">Generator Sales</a></li><li><a href="service-detail.html?s=solar">Solar Systems</a></li><li><a href="service-detail.html?s=elevator">Elevators</a></li><li><a href="service-detail.html?s=ats">ATS Panels</a></li><li><a href="service-detail.html?s=maintenance">Maintenance</a></li><li><a href="service-detail.html?s=rental">Rental</a></li></ul></div>
+  <div class="footer-col"><h4>Contact</h4><ul class="footer-contact"><li><i class="fa fa-mobile-alt"></i><span>0301-2499709</span></li><li><i class="fa fa-mobile-alt"></i><span>0302-8289709</span></li><li><i class="fa fa-envelope"></i><a href="mailto:anpowerengineering@hotmail.com">anpowerengineering@hotmail.com</a></li><li><i class="fa fa-map-marker-alt"></i><span>Shop No 3/43/C, 24th Tauheed Commercial Street, Phase 5 DHA, Karachi</span></li></ul></div></div>
+  <div class="footer-bottom container"><span>© 2009–2026 <span>A.N Power Engineering & Services</span> | All Rights Reserved</span></div>
+</footer>
+<div id="back-top"><i class="fa fa-chevron-up"></i></div>
+<a id="wa-float" href="https://wa.me/923028289709" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<script src="script.js"></script>
+<script>
+const services = {
+  generator: {
+    tag:'Power Generation', title:'Generator Sales <span>& Rental</span>', subtitle:'New & used generators from 10kVA to 2000kVA — with full installation, commissioning, and after-sales support.',
+    icon:'<i class="fa fa-bolt" style="color:#0ea5e9;font-size:3.5rem"></i>', img:'images/generators/WhatsApp-Image-2026-04-29-at-11.45.02-PM.jpeg',
+    body:`A.N Power Engineering is one of Karachi's leading suppliers and rental providers of diesel generators. With over 15 years of experience in the industry, we offer a comprehensive range of new and refurbished generators to meet every power requirement — from small residential standby units to large industrial power plants.\n\nWe source our generators from internationally recognized brands, ensuring every unit meets strict performance and reliability standards. Our technical team handles complete installation, wiring, fuel management, load testing, and commissioning — so your power system is production-ready from day one.`,
+    benefits:['Widest range in Karachi','Genuine spare parts', '24/7 emergency support','Certified installation team','Load bank testing included','Fuel management options'],
+    includes:['Site assessment & load analysis','Generator supply & transport','Professional installation','Earthing & electrical connections','Fuel system setup','Load testing & commissioning','Operator training','Warranty & AMC options']
+  },
+  solar: {
+    tag:'Renewable Energy', title:'Solar Energy <span>Systems</span>', subtitle:'Complete solar panel installations for residential, commercial, and industrial applications across Karachi.',
+    icon:'<i class="fa fa-solar-panel" style="color:#0ea5e9;font-size:3.5rem"></i>', img:'images/solar/WhatsApp-Image-2026-04-29-at-11.41.52-PM.jpeg',
+    body:`A.N Power Engineering's solar division provides end-to-end solar energy solutions — from system design and equipment supply to professional installation and net metering registration. Whether you're looking to reduce your electricity bills at home or power an entire industrial facility with clean energy, our engineers design a system perfectly matched to your consumption patterns and roof space.\n\nWe use high-efficiency solar panels and internationally certified inverters, ensuring maximum energy yield and long system life. Our projects have saved clients up to 80% on electricity bills, with typical payback periods of 4–6 years.`,
+    benefits:['Up to 80% bill reduction','Premium panel brands','Turnkey installations','Net metering support','5-year workmanship warranty','On-grid & off-grid options'],
+    includes:['Site survey & shading analysis','Custom system design','High-efficiency solar panels','String/hybrid inverter','Mounting structure & DC cabling','AC electrical integration','Net metering application','Performance monitoring setup']
+  },
+  elevator: {
+    tag:'Vertical Transport', title:'Elevators & <span>Escalators</span>', subtitle:'Complete supply, installation, and maintenance for all types of elevators and escalators.',
+    icon:'<i class="fa fa-building" style="color:#0ea5e9;font-size:3.5rem"></i>', img:'images/elevators/WhatsApp-Image-2026-04-29-at-11.39.16-PM.jpeg',
+    body:`A.N Power Engineering provides comprehensive elevator and escalator solutions for residential buildings, commercial complexes, hospitals, malls, and industrial facilities. We handle the entire project lifecycle — from consultation and equipment supply to professional installation, regulatory compliance, and ongoing maintenance contracts.\n\nOur elevator division covers passenger elevators, freight elevators, dumbwaiters, and escalators. We work with leading manufacturers to deliver systems that meet international safety standards, and our maintenance team ensures long-term reliability through scheduled service and rapid emergency response.`,
+    benefits:['All elevator types covered','International safety standards','Rapid maintenance response','Genuine spare parts','Annual service agreements','Emergency 24/7 support'],
+    includes:['Requirement assessment','Elevator/escalator supply','Civil work coordination','Professional installation','Safety inspections & certification','Operator training','Annual maintenance contract','Emergency breakdown support']
+  },
+  ats: {
+    tag:'Electrical Panels', title:'ATS <span>Panels</span>', subtitle:'Automatic Transfer Switch panels — supply, custom fabrication, installation, and commissioning.',
+    icon:'<i class="fa fa-plug" style="color:#0ea5e9;font-size:3.5rem"></i>', img:'images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.30-PM.jpeg',
+    body:`An Automatic Transfer Switch (ATS) panel is the critical link between your utility power supply and backup generator. A.N Power Engineering supplies, fabricates, and installs ATS panels of all capacities and types — from simple manual transfer panels to sophisticated fully automatic, microprocessor-controlled systems.\n\nOur electrical engineers design each panel to match your exact load requirements, ensuring seamless, rapid switching with full protection. We use only genuine components from certified manufacturers, and every panel undergoes rigorous testing before commissioning.`,
+    benefits:['Custom panel fabrication','Genuine components only','Seamless auto switching','Surge & fault protection','Digital monitoring options','Full testing & certification'],
+    includes:['Load requirement analysis','Panel design & specification','Custom panel fabrication','Supply of genuine components','Site installation & wiring','Synchronization setup','Testing & commissioning','Documentation & training']
+  },
+  maintenance: {
+    tag:'Service Contracts', title:'Maintenance <span>Contracts</span>', subtitle:'Annual preventive maintenance and 24/7 emergency support for all power and engineering equipment.',
+    icon:'<i class="fa fa-tools" style="color:#0ea5e9;font-size:3.5rem"></i>', img:'images/spare-parts/WhatsApp-Image-2026-04-29-at-11.47.04-PM.jpeg',
+    body:`Preventive maintenance is the most cost-effective way to ensure your power equipment operates reliably and lasts its full design life. A.N Power Engineering offers comprehensive annual maintenance contracts (AMC) covering generators, ATS panels, solar systems, elevators, and all associated electrical equipment.\n\nOur maintenance programs are tailored to your equipment, site conditions, and usage patterns. Scheduled visits are performed by certified technicians, and our 24/7 emergency response team is available whenever unexpected issues arise — minimizing downtime and protecting your operations.`,
+    benefits:['Scheduled preventive visits','24/7 emergency response','Certified technicians','Genuine parts on hand','Detailed service reports','Priority client status'],
+    includes:['Initial equipment survey','Custom maintenance schedule','Quarterly/bi-annual visits','Oil & filter changes','Battery & fuel system checks','Electrical safety inspection','Emergency breakdown calls','Detailed service documentation']
+  },
+  rental: {
+    tag:'Equipment Rental', title:'Generator <span>Rental Services</span>', subtitle:'Flexible short and long-term generator rental from 10kVA to 2000kVA with delivery and setup.',
+    icon:'<i class="fa fa-truck" style="color:#0ea5e9;font-size:3.5rem"></i>', img:'images/generators/WhatsApp-Image-2026-04-29-at-11.45.03-PM.jpeg',
+    body:`Whether you need backup power for an event, construction site, or a temporary business operation, A.N Power Engineering's rental fleet offers the perfect solution. We maintain a diverse fleet of generators from 10kVA to 2000kVA, all regularly serviced and ready for immediate deployment.\n\nOur rental service includes delivery, installation, fuel management options, and a qualified operator if required. We offer daily, weekly, monthly, and long-term rental contracts, making it a cost-effective alternative to purchasing for temporary power needs.`,
+    benefits:['Same-day availability','Delivery & setup included','Qualified operator option','Fuel delivery available','Flexible rental periods','24/7 technical support'],
+    includes:['Fleet availability check','Delivery & transport','Professional installation','Fuel system setup','Optional operator service','Fuel top-up coordination','On-call technical support','Safe demobilization']
+  }
+};
+
+const params = new URLSearchParams(window.location.search);
+const key = params.get('s') || 'generator';
+const svc = services[key] || services.generator;
+
+document.getElementById('breadcrumb-name').textContent = svc.title.replace(/<[^>]*>/g,'');
+document.getElementById('sd-tag').textContent = svc.tag;
+document.getElementById('sd-title').innerHTML = svc.title;
+document.getElementById('sd-subtitle').textContent = svc.subtitle;
+document.getElementById('sd-heading').innerHTML = svc.title;
+document.getElementById('sd-icon').innerHTML = svc.icon;
+document.getElementById('sd-body').innerHTML = svc.body.replace(/\n\n/g,'</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-top:16px">');
+
+if (svc.img) {
+  const wrap = document.getElementById('sd-img-wrap');
+  const img = document.createElement('img');
+  img.src = svc.img;
+  img.alt = svc.tag;
+  img.onerror = function() {
+    wrap.innerHTML = '<div class="sd-img-placeholder" style="display:flex;align-items:center;justify-content:center">' + svc.icon + '</div>';
+  };
+  wrap.innerHTML = '';
+  wrap.appendChild(img);
+  wrap.className = 'sd-img reveal-left';
+}
+
+// Auto-select current service in dropdown
+const selectEl = document.getElementById('sd-service-select');
+if (selectEl) {
+  for (let opt of selectEl.options) {
+    if (opt.value === key) { opt.selected = true; break; }
+  }
+}
+
+const benefitsEl = document.getElementById('sd-benefits');
+svc.benefits.forEach(b => {
+  const d = document.createElement('div');
+  d.className = 'benefit-item';
+  d.innerHTML = `<i class="fa fa-check-circle"></i><p>${b}</p>`;
+  benefitsEl.appendChild(d);
+});
+
+const includesEl = document.getElementById('sd-includes');
+svc.includes.forEach(item => {
+  const li = document.createElement('li');
+  li.style.cssText = 'display:flex;gap:8px;align-items:center;font-size:0.87rem;color:var(--muted);padding:8px 0;border-bottom:1px solid var(--border)';
+  li.innerHTML = `<i class="fa fa-angle-right" style="color:var(--blue)"></i>${item}`;
+  includesEl.appendChild(li);
+});
+</script>
+</body>
+</html>

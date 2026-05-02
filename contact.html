@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Contact Us | A.N Power Engineering & Services</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+.contact-layout { display:grid; grid-template-columns:1.1fr 1fr; gap:50px; align-items:start; }
+.wa-cta { display:flex; align-items:center; gap:16px; padding:20px 24px; background:rgba(37,211,102,0.08); border:1px solid rgba(37,211,102,0.2); border-radius:var(--radius); margin-bottom:30px; transition:var(--transition); }
+.wa-cta:hover { background:rgba(37,211,102,0.14); transform:translateY(-2px); }
+.wa-cta .wa-icon { width:50px; height:50px; background:#25D366; border-radius:10px; display:flex; align-items:center; justify-content:center; font-size:1.4rem; color:white; flex-shrink:0; }
+.wa-cta strong { display:block; font-size:1rem; color:var(--white); }
+.wa-cta span { font-size:0.83rem; color:var(--muted); }
+.hours-table { width:100%; border-collapse:collapse; margin-top:16px; }
+.hours-table tr { border-bottom:1px solid var(--border); }
+.hours-table tr:last-child { border-bottom:none; }
+.hours-table td { padding:10px 0; font-size:0.87rem; color:var(--muted); }
+.hours-table td:last-child { color:var(--white); text-align:right; }
+@media(max-width:900px){ .contact-layout{grid-template-columns:1fr} }
+/* Fix: select option dropdown background on dark theme */
+select option { background-color: #1a2332; color: #e2e8f0; }
+select { color: #e2e8f0; }
+</style>
+</head>
+<body>
+<div id="preloader"><div class="pre-logo">A·N POWER</div><div class="pre-bar"><div class="pre-bar-fill"></div></div></div>
+<nav id="navbar">
+  <a href="index.html" class="nav-brand"><svg class="brand-icon" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/><path d="M20 6L8 20h9v14l12-14h-9V6z" fill="#0ea5e9" stroke="#38bdf8" stroke-width="0.5"/></svg><div class="brand-text"><div class="top">A.N Power</div><div class="sub">Engineering & Services</div></div></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li>
+    <li class="has-dropdown"><a href="services.html">Services</a><div class="dropdown"><a href="service-detail.html?s=generator">Generator Sales & Rental</a><a href="service-detail.html?s=solar">Solar Energy Systems</a><a href="service-detail.html?s=elevator">Elevators & Escalators</a><a href="service-detail.html?s=ats">ATS Panels</a><a href="service-detail.html?s=maintenance">Maintenance Contracts</a><a href="service-detail.html?s=rental">Rental Services</a></div></li>
+    <li class="has-dropdown"><a href="projects.html">Projects</a><div class="dropdown"><a href="projects.html?cat=electrical">Electrical Projects</a><a href="projects.html?cat=industrial">Industrial Projects</a><a href="projects.html?cat=maintenance">Maintenance Projects</a></div></li>
+    <li><a href="clients.html">Clients</a></li><li><a href="careers.html">Careers</a></li><li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="#quote" class="btn-quote">Get a Quote</a>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav"><div class="mob-section"><div class="mob-label">Navigation</div><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="clients.html">Clients</a><a href="careers.html">Careers</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div><a href="#quote" class="btn btn-primary btn-quote">Get a Quote</a></div>
+
+<section class="page-hero">
+  <div class="page-hero-inner container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>Contact</span></div>
+    <div class="tag">Get In Touch</div>
+    <h1>Contact <span>Us</span></h1>
+    <p>Reach out for a free consultation, quote, or any engineering inquiry. We respond fast — usually within 2 hours.</p>
+  </div>
+</section>
+
+<!-- Contact Info Strip -->
+<section style="background:var(--dark2);border-bottom:1px solid var(--border);padding:30px 5%">
+  <div class="container">
+    <div class="grid-4" style="gap:20px">
+      <a href="tel:03012499709" class="contact-info-item" style="text-decoration:none">
+        <div class="ci-icon"><i class="fa fa-mobile-alt"></i></div>
+        <div class="ci-text"><strong>Mobile 1</strong><span>0301-2499709</span></div>
+      </a>
+      <a href="tel:03022499709" class="contact-info-item" style="text-decoration:none">
+        <div class="ci-icon"><i class="fa fa-phone"></i></div>
+        <div class="ci-text"><strong>Mobile 2</strong><span>0302-8289709</span></div>
+      </a>
+
+      <a href="mailto:anpowerengineering@hotmail.com" class="contact-info-item" style="text-decoration:none">
+        <div class="ci-icon"><i class="fa fa-envelope"></i></div>
+        <div class="ci-text"><strong>Email</strong><span style="font-size:0.82rem">anpowerengineering@hotmail.com</span></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Main Contact Section -->
+<section class="section" id="quote">
+  <div class="container">
+    <div class="contact-layout">
+      <!-- Form -->
+      <div class="reveal-left">
+        <div class="tag">Send a Message</div>
+        <h2 class="section-title">Get a Free <span>Quote</span></h2>
+        <div class="divider"></div>
+        <p style="color:var(--muted);font-size:0.9rem;margin-bottom:28px;line-height:1.7">Fill in the form below and our engineering team will review your requirements and get back to you within 2 hours during business hours.</p>
+
+        <!-- WhatsApp Quick Button -->
+        <a href="https://wa.me/923028289709?text=Hello%2C%20I%20need%20a%20quote%20for%20engineering%20services." target="_blank" class="wa-cta">
+          <div class="wa-icon"><i class="fab fa-whatsapp"></i></div>
+          <div><strong>WhatsApp Us for Faster Response</strong><span>Tap to open WhatsApp — available 24/7 for urgent queries</span></div>
+        </a>
+
+        <form class="contact-form js-form">
+          <div class="form-row">
+            <div>
+              <label>Full Name *</label>
+              <input type="text" placeholder="Your full name" required/>
+            </div>
+            <div>
+              <label>Phone Number *</label>
+              <input type="tel" placeholder="+92 3XX XXXXXXX" required/>
+            </div>
+          </div>
+          <label>Email Address</label>
+          <input type="email" placeholder="your@email.com"/>
+          <label>Service Required *</label>
+          <select required>
+            <option value="">Select a service</option>
+            <option>Generator Sales</option>
+            <option>Generator Rental</option>
+            <option>Solar Energy System</option>
+            <option>Elevator / Escalator</option>
+            <option>ATS Panel</option>
+            <option>Maintenance Contract</option>
+            <option>Other / General Inquiry</option>
+          </select>
+          <label>Message / Requirements *</label>
+          <textarea placeholder="Please describe your requirement in detail — capacity needed, site type, timeline, etc." required></textarea>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;padding:15px"><i class="fa fa-bolt"></i> Send Message & Request Quote</button>
+          <div class="form-success"><i class="fa fa-check-circle" style="color:#22c55e;margin-right:6px"></i> Message received! Our team will call you within 2 hours.</div>
+        </form>
+      </div>
+
+      <!-- Info Sidebar -->
+      <div class="reveal-right">
+        <div style="background:var(--glass2);border:1px solid var(--border);border-radius:var(--radius);padding:30px;margin-bottom:24px">
+          <h4 style="font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:22px;color:var(--blue2)">Our Location</h4>
+          <div class="contact-info-item" style="margin-bottom:0">
+            <div class="ci-icon"><i class="fa fa-map-marker-alt"></i></div>
+            <div class="ci-text">
+              <strong>Office Address</strong>
+              <span>Shop No 3/43/C, 24th Tauheed Commercial Street, Phase 5 DHA, Karachi, Pakistan</span>
+            </div>
+          </div>
+          <div class="map-frame" style="margin-top:20px">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.0!2d67.0786!3d24.8123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2z!5e0!3m2!1sen!2spk!4v1680000000000!5m2!1sen!2spk"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="A.N Power Engineering Location">
+            </iframe>
+          </div>
+        </div>
+
+        <div style="background:var(--glass2);border:1px solid var(--border);border-radius:var(--radius);padding:30px">
+          <h4 style="font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:16px;color:var(--blue2)">Business Hours</h4>
+          <table class="hours-table">
+            <tr><td>Monday – Thursday</td><td>9:00 AM – 6:00 PM</td></tr>
+            <tr><td>Friday</td><td>9:00 AM – 12:30 PM</td></tr>
+            <tr><td>Saturday</td><td>9:00 AM – 4:00 PM</td></tr>
+            <tr><td>Sunday</td><td>Closed (Emergencies: 24/7)</td></tr>
+          </table>
+          <div style="margin-top:20px;padding:14px;background:rgba(14,165,233,0.06);border:1px solid rgba(14,165,233,0.15);border-radius:8px;font-size:0.83rem;color:var(--muted)">
+            <i class="fa fa-info-circle" style="color:var(--blue);margin-right:6px"></i>
+            For emergencies outside business hours, call or WhatsApp us on <strong style="color:var(--white)">0302-8289709</strong> — we have on-call engineers available 24/7.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="footer">
+  <div class="footer-grid container"><div class="footer-brand"><a href="index.html" class="nav-brand"><svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/><path d="M20 6L8 20h9v14l12-14h-9V6z" fill="#0ea5e9"/></svg><div class="brand-text"><div class="top">A.N Power</div><div class="sub">Engineering & Services</div></div></a><p>Karachi's trusted power engineering company since 2009.</p><div class="socials"><a href="#"><i class="fab fa-whatsapp"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="mailto:anpowerengineering@hotmail.com"><i class="fa fa-envelope"></i></a></div></div>
+  <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="careers.html">Careers</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+  <div class="footer-col"><h4>Services</h4><ul><li><a href="service-detail.html?s=generator">Generator Sales</a></li><li><a href="service-detail.html?s=solar">Solar Systems</a></li><li><a href="service-detail.html?s=elevator">Elevators</a></li><li><a href="service-detail.html?s=ats">ATS Panels</a></li><li><a href="service-detail.html?s=maintenance">Maintenance</a></li><li><a href="service-detail.html?s=rental">Rental</a></li></ul></div>
+  <div class="footer-col"><h4>Contact</h4><ul class="footer-contact"><li><i class="fa fa-mobile-alt"></i><span>0301-2499709</span></li><li><i class="fa fa-mobile-alt"></i><span>0302-8289709</span></li><li><i class="fa fa-envelope"></i><a href="mailto:anpowerengineering@hotmail.com">anpowerengineering@hotmail.com</a></li><li><i class="fa fa-map-marker-alt"></i><span>Shop No 3/43/C, 24th Tauheed Commercial Street, Phase 5 DHA, Karachi</span></li></ul></div></div>
+  <div class="footer-bottom container"><span>© 2009–2026 <span>A.N Power Engineering & Services</span> | All Rights Reserved</span><span>Established March 5, 2009 | Serving Karachi for over 15 years</span></div>
+</footer>
+<div id="back-top"><i class="fa fa-chevron-up"></i></div>
+<a id="wa-float" href="https://wa.me/923028289709" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<script src="script.js"></script>
+</body>
+</html>

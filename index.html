@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>A.N Power Engineering & Services | Home</title>
+<meta name="description" content="A.N Power Engineering & Services — Pakistan's trusted power & engineering company. Generators, Solar, Elevators, ATS Panels & more since 2009."/>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+/* ── CTA Section ── */
+#cta-section { padding: 90px 5%; }
+/* ── Services section ── */
+#services-preview { padding: 90px 5%; background: linear-gradient(180deg, var(--dark) 0%, var(--dark2) 100%); }
+/* ── Projects preview ── */
+#projects-preview { padding: 90px 5%; }
+/* ── Testimonials ── */
+#testimonials { padding: 90px 5%; background: var(--dark2); }
+/* hero dots orbit */
+.orbit-dot.od1 { top: 50%; left: 2%; animation: orbitX 6s ease-in-out infinite; }
+.orbit-dot.od2 { top: 8%; left: 50%; animation: orbitY 7s ease-in-out infinite 1s; }
+.orbit-dot.od3 { bottom: 12%; right: 5%; animation: orbitX 8s ease-in-out infinite 2s; }
+@keyframes orbitX { 0%,100%{transform:translateX(0) translateY(-50%)} 50%{transform:translateX(12px) translateY(-50%)} }
+@keyframes orbitY { 0%,100%{transform:translateY(0)} 50%{transform:translateY(12px)} }
+</style>
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="pre-logo">A·N POWER</div>
+  <div class="pre-bar"><div class="pre-bar-fill"></div></div>
+</div>
+
+<!-- Navbar -->
+<nav id="navbar">
+  <a href="index.html" class="nav-brand">
+    <svg class="brand-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="40" height="40" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/>
+      <path d="M20 6L8 20h9v14l12-14h-9V6z" fill="#0ea5e9" stroke="#38bdf8" stroke-width="0.5"/>
+    </svg>
+    <div class="brand-text">
+      <div class="top">A.N Power</div>
+      <div class="sub">Engineering & Services</div>
+    </div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="has-dropdown"><a href="services.html">Services</a>
+      <div class="dropdown">
+        <a href="service-detail.html?s=generator">Generator Sales & Rental</a>
+        <a href="service-detail.html?s=solar">Solar Energy Systems</a>
+        <a href="service-detail.html?s=elevator">Elevators & Escalators</a>
+        <a href="service-detail.html?s=ats">ATS Panels</a>
+        <a href="service-detail.html?s=maintenance">Maintenance Contracts</a>
+        <a href="service-detail.html?s=rental">Rental Services</a>
+      </div>
+    </li>
+    <li class="has-dropdown"><a href="projects.html">Projects</a>
+      <div class="dropdown">
+        <a href="projects.html?cat=electrical">Electrical Projects</a>
+        <a href="projects.html?cat=industrial">Industrial Projects</a>
+        <a href="projects.html?cat=maintenance">Maintenance Projects</a>
+      </div>
+    </li>
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html#quote" class="btn-quote">Get a Quote</a>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<!-- Mobile Nav -->
+<div class="mobile-nav">
+  <div class="mob-section">
+    <div class="mob-label">Navigation</div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="clients.html">Clients</a>
+    <a href="careers.html">Careers</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html#quote" class="btn btn-primary btn-quote">Get a Quote</a>
+</div>
+
+<!-- Hero -->
+<section id="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-scan-line"></div>
+
+  <div class="hero-grid">
+    <!-- LEFT: Content -->
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        Since 2009 · Serving Karachi
+      </div>
+
+      <h1 class="hero-title">
+        <span class="line ht-sm">Pakistan's</span>
+        <span class="line ht-lg"><span class="accent">Power</span> &amp;</span>
+        <span class="line ht-lg">Engineering</span>
+        <span class="line ht-sm">Experts</span>
+      </h1>
+
+      <p class="hero-desc">
+        Trusted partner for power generation, solar energy, elevators &amp; industrial solutions — delivering excellence across Karachi since 2009.
+      </p>
+
+      <div class="hero-cta">
+        <a href="contact.html#quote" class="btn btn-primary">
+          <i class="fa fa-bolt"></i> Get a Quote
+        </a>
+        <a href="services.html" class="btn btn-ghost">
+          <i class="fa fa-arrow-right"></i> Our Services
+        </a>
+      </div>
+
+      <!-- Service Chips -->
+      <div class="hero-chips">
+        <span class="chip"><i class="fa fa-bolt"></i> Generators</span>
+        <span class="chip"><i class="fa fa-sun"></i> Solar</span>
+        <span class="chip"><i class="fa fa-building"></i> Elevators</span>
+        <span class="chip"><i class="fa fa-plug"></i> ATS Panels</span>
+      </div>
+    </div>
+
+    <!-- RIGHT: Visual Panel -->
+    <div class="hero-visual">
+      <!-- Metric cards -->
+      <div class="hero-panel">
+        <div class="panel-header">
+          <div class="panel-dot pd-green"></div>
+          <div class="panel-dot pd-yellow"></div>
+          <div class="panel-dot pd-red"></div>
+          <span class="panel-title">Operations Overview</span>
+        </div>
+        <div class="panel-metrics">
+          <div class="metric-row">
+            <div class="metric-item">
+              <div class="metric-val">500<sup>+</sup></div>
+              <div class="metric-label">Projects Completed</div>
+              <div class="metric-bar"><div class="metric-fill" style="width:85%"></div></div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-val">300<sup>+</sup></div>
+              <div class="metric-label">Happy Clients</div>
+              <div class="metric-bar"><div class="metric-fill" style="width:72%"></div></div>
+            </div>
+          </div>
+          <div class="metric-row">
+            <div class="metric-item">
+              <div class="metric-val">15<sup>+</sup></div>
+              <div class="metric-label">Years Experience</div>
+              <div class="metric-bar"><div class="metric-fill" style="width:60%"></div></div>
+            </div>
+            <div class="metric-item">
+              <div class="metric-val">24/7</div>
+              <div class="metric-label">Support Available</div>
+              <div class="metric-bar"><div class="metric-fill mf-full" style="width:100%"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Live status -->
+        <div class="panel-status">
+          <div class="status-indicator">
+            <span class="status-pulse"></span>
+            <span class="status-text">Systems Operational</span>
+          </div>
+          <div class="status-badge">Karachi, PK</div>
+        </div>
+
+        <!-- Mini chart bars -->
+        <div class="panel-chart">
+          <div class="chart-label">Project Activity</div>
+          <div class="chart-bars">
+            <div class="cbar" style="height:40%"></div>
+            <div class="cbar" style="height:65%"></div>
+            <div class="cbar" style="height:50%"></div>
+            <div class="cbar" style="height:80%"></div>
+            <div class="cbar" style="height:55%"></div>
+            <div class="cbar" style="height:90%"></div>
+            <div class="cbar" style="height:70%"></div>
+            <div class="cbar active" style="height:100%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Floating accent cards -->
+      <div class="float-card fc1">
+        <i class="fa fa-check-circle"></i>
+        <span>ISO Certified Quality</span>
+      </div>
+      <div class="float-card fc2">
+        <i class="fa fa-shield-alt"></i>
+        <span>5-Year Warranty</span>
+      </div>
+
+      <!-- Glow orb -->
+      <div class="hero-glow-orb"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section id="stats">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item reveal d1">
+        <div class="icon"><i class="fa fa-hard-hat"></i></div>
+        <span class="stat-num" data-target="500" data-suffix="+">0</span>
+        <div class="stat-label">Projects Completed</div>
+      </div>
+      <div class="stat-item reveal d2">
+        <div class="icon"><i class="fa fa-handshake"></i></div>
+        <span class="stat-num" data-target="300" data-suffix="+">0</span>
+        <div class="stat-label">Satisfied Clients</div>
+      </div>
+      <div class="stat-item reveal d3">
+        <div class="icon"><i class="fa fa-calendar-check"></i></div>
+        <span class="stat-num" data-target="15" data-suffix="+">0</span>
+        <div class="stat-label">Years Experience</div>
+      </div>
+      <div class="stat-item reveal d4">
+        <div class="icon"><i class="fa fa-wrench"></i></div>
+        <span class="stat-num" data-target="50" data-suffix="+">0</span>
+        <div class="stat-label">Expert Engineers</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services Preview -->
+<section id="services-preview">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="tag">What We Do</div>
+      <h2 class="section-title">Complete Power &<br/><span>Engineering Solutions</span></h2>
+      <div class="divider"></div>
+      <p class="section-sub">From diesel generators to solar energy systems, elevators to maintenance services — comprehensive solutions for residential, commercial, and industrial needs.</p>
+    </div>
+    <div class="grid-3" style="margin-top:50px">
+      <div class="service-card reveal d1">
+        <div class="svc-card-img"><img src="images/generators/WhatsApp-Image-2026-04-29-at-11.45.02-PM.jpeg" alt="Generator Sales"/></div>
+        <div class="svc-card-body">
+          <div class="service-icon"><i class="fa fa-bolt"></i></div>
+          <h3>Generator Sales & Rental</h3>
+          <p>New & used generators from 10kVA to 2000kVA. Sales, rental, and full technical support available with genuine parts.</p>
+          <a href="service-detail.html?s=generator" class="service-link">Learn More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="service-card reveal d2">
+        <div class="svc-card-img"><img src="images/solar/WhatsApp-Image-2026-04-29-at-11.41.52-PM.jpeg" alt="Solar Energy"/></div>
+        <div class="svc-card-body">
+          <div class="service-icon"><i class="fa fa-solar-panel"></i></div>
+          <h3>Solar Energy Systems</h3>
+          <p>Complete solar panel installations and equipment supply. Sustainable, cost-effective energy for every scale of project.</p>
+          <a href="service-detail.html?s=solar" class="service-link">Learn More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="service-card reveal d3">
+        <div class="svc-card-img"><img src="images/elevators/WhatsApp-Image-2026-04-29-at-11.39.15-PM.jpeg" alt="Elevators"/></div>
+        <div class="svc-card-body">
+          <div class="service-icon"><i class="fa fa-building"></i></div>
+          <h3>Elevators & Escalators</h3>
+          <p>Full-cycle elevator and escalator solutions — supply, installation, modernization, and ongoing maintenance contracts.</p>
+          <a href="service-detail.html?s=elevator" class="service-link">Learn More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="service-card reveal d4">
+        <div class="svc-card-img"><img src="images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.30-PM.jpeg" alt="ATS Panels"/></div>
+        <div class="svc-card-body">
+          <div class="service-icon"><i class="fa fa-plug"></i></div>
+          <h3>ATS Panels</h3>
+          <p>Automatic Transfer Switch panels of all types. Genuine parts, accessories, and expert installation guaranteed.</p>
+          <a href="service-detail.html?s=ats" class="service-link">Learn More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="service-card reveal d5">
+        <div class="svc-card-img"><img src="images/spare-parts/WhatsApp-Image-2026-04-29-at-11.40.57-PM.jpeg" alt="Maintenance"/></div>
+        <div class="svc-card-body">
+          <div class="service-icon"><i class="fa fa-tools"></i></div>
+          <h3>Maintenance Contracts</h3>
+          <p>Annual service agreements and scheduled inspection support for all power and engineering equipment.</p>
+          <a href="service-detail.html?s=maintenance" class="service-link">Learn More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="service-card reveal d6">
+        <div class="svc-card-img"><img src="images/generators/WhatsApp-Image-2026-04-29-at-11.50.17-PM.jpeg" alt="Generator Rental"/></div>
+        <div class="svc-card-body">
+          <div class="service-icon"><i class="fa fa-truck"></i></div>
+          <h3>Rental Services</h3>
+          <p>Flexible generator rental from 10kVA to 2000kVA — perfect for events, construction, and emergency power needs.</p>
+          <a href="service-detail.html?s=rental" class="service-link">Learn More <i class="fa fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:44px">
+      <a href="services.html" class="btn btn-outline">View All Services <i class="fa fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Preview -->
+<section id="projects-preview">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="tag">Our Work</div>
+      <h2 class="section-title">Featured <span>Projects</span></h2>
+      <div class="divider"></div>
+      <p class="section-sub">A showcase of completed installations and engineering projects across Karachi and Pakistan.</p>
+    </div>
+    <div class="grid-3" style="margin-top:50px">
+      <div class="project-card reveal d1">
+        <img src="images/generators/WhatsApp-Image-2026-04-29-at-11.45.02-PM.jpeg" alt="Diesel Generator Installation" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80'"/>
+        <div class="project-overlay">
+          <div class="proj-tag">Industrial</div>
+          <h3>500kVA Generator Installation</h3>
+          <p>Commercial complex, DHA Karachi</p>
+        </div>
+      </div>
+      <div class="project-card reveal d2">
+        <img src="images/solar/WhatsApp-Image-2026-04-29-at-11.41.52-PM.jpeg" alt="Solar Energy Project" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=600&q=80'"/>
+        <div class="project-overlay">
+          <div class="proj-tag">Solar</div>
+          <h3>100kW Rooftop Solar System</h3>
+          <p>Industrial warehouse, SITE Area</p>
+        </div>
+      </div>
+      <div class="project-card reveal d3">
+        <img src="images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.30-PM.jpeg" alt="ATS Panel" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80'"/>
+        <div class="project-overlay">
+          <div class="proj-tag">Electrical</div>
+          <h3>ATS Panel Integration</h3>
+          <p>Multi-floor commercial building, Clifton</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:44px">
+      <a href="projects.html" class="btn btn-outline">All Projects <i class="fa fa-arrow-right"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="tag">Client Feedback</div>
+      <h2 class="section-title">What Our <span>Clients Say</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div style="max-width:760px; margin:40px auto 0">
+      <div class="testimonial-slider reveal">
+        <div class="testimonial-track">
+          <div class="testimonial">
+            <div class="quote">"</div>
+            <p>A.N Power Engineering delivered our 250kVA generator installation on time and within budget. Their team was professional, knowledgeable, and the after-sales support has been outstanding for over two years.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SM</div>
+              <div class="author-info">
+                <strong>Shahid Mehmood</strong>
+                <span>Director, SM Industries, Karachi</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="quote">"</div>
+            <p>We installed a 50kW solar system through A.N Power and our electricity bills dropped by 70%. The installation was clean, fast, and they handled all the technicalities. Highly recommended.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">FA</div>
+              <div class="author-info">
+                <strong>Farhan Ahmed</strong>
+                <span>Owner, Ahmed Textile Mills, SITE</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial">
+            <div class="quote">"</div>
+            <p>Our elevator maintenance contract with A.N Power is the best decision we made. They respond within hours, have genuine spare parts on hand, and their engineers truly understand the equipment.</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">ZK</div>
+              <div class="author-info">
+                <strong>Zubair Khan</strong>
+                <span>Property Manager, Clifton Towers</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider-controls">
+          <div class="slider-dot active"></div>
+          <div class="slider-dot"></div>
+          <div class="slider-dot"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section id="cta-section">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <h2>Ready to Power Your <span style="color:var(--blue2)">Next Project?</span></h2>
+      <p>Get a free consultation and customized quote from our engineering team. Available 24/7 for urgent requirements.</p>
+      <div class="btns">
+        <a href="contact.html#quote" class="btn btn-primary"><i class="fa fa-bolt"></i> Get Free Quote</a>
+        <a href="tel:03022499709" class="btn btn-outline"><i class="fa fa-phone"></i> Call Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="footer-grid container">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-brand" style="margin-bottom:0">
+        <svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/><path d="M20 6L8 20h9v14l12-14h-9V6z" fill="#0ea5e9"/></svg>
+        <div class="brand-text"><div class="top">A.N Power</div><div class="sub">Engineering & Services</div></div>
+      </a>
+      <p>Karachi's trusted power engineering company since 2009. Delivering precision, reliability, and excellence in every project.</p>
+      <div class="socials">
+        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:anpowerengineering@hotmail.com"><i class="fa fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="service-detail.html?s=generator">Generator Sales</a></li>
+        <li><a href="service-detail.html?s=solar">Solar Systems</a></li>
+        <li><a href="service-detail.html?s=elevator">Elevators</a></li>
+        <li><a href="service-detail.html?s=ats">ATS Panels</a></li>
+        <li><a href="service-detail.html?s=maintenance">Maintenance</a></li>
+        <li><a href="service-detail.html?s=rental">Rental</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul class="footer-contact">
+        <li><i class="fa fa-mobile-alt"></i><span>0301-2499709</span></li>
+        <li><i class="fa fa-mobile-alt"></i><span>0302-8289709</span></li>
+        <li><i class="fa fa-envelope"></i><a href="mailto:anpowerengineering@hotmail.com">anpowerengineering@hotmail.com</a></li>
+        <li><i class="fa fa-map-marker-alt"></i><span>Shop No 3/43/C, 24th Tauheed Commercial Street, Phase 5 DHA, Karachi</span></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom container">
+    <span>© 2009–2026 <span>A.N Power Engineering & Services</span> | All Rights Reserved</span>
+    <span>Established March 5, 2009 | Serving Karachi for over 15 years</span>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<div id="back-top"><i class="fa fa-chevron-up"></i></div>
+<a id="wa-float" href="https://wa.me/923028289709" target="_blank" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+<script src="script.js"></script>
+</body>
+</html>
