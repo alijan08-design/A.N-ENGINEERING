@@ -693,6 +693,7 @@ button { cursor: pointer; border: none; background: none; }
   padding: 30px;
   transition: var(--transition);
   position: relative; overflow: hidden;
+  cursor: pointer;
 }
 .service-card::before {
   content: ''; position: absolute; inset: 0;

@@ -39,83 +39,44 @@
 </nav>
 <div class="mobile-nav"><div class="mob-section"><div class="mob-label">Navigation</div><a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="clients.html">Clients</a><a href="careers.html">Careers</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></div><a href="contact.html#quote" class="btn btn-primary btn-quote">Get a Quote</a></div>
 
-<section class="page-hero">
+<section class="page-hero" id="pd-hero">
   <div class="page-hero-inner container">
-    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="projects.html">Projects</a><span>/</span><span>Project Detail</span></div>
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><a href="projects.html">Projects</a><span>/</span><span id="pd-breadcrumb">Project Detail</span></div>
     <div class="tag">Case Study</div>
-    <h1>500kVA Generator <span>Installation</span></h1>
-    <p>Commercial Complex — DHA Phase 6, Karachi</p>
+    <h1 id="pd-title">Loading...</h1>
+    <p id="pd-subtitle"></p>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
     <div class="reveal">
-      <img class="pd-hero-img" src="images/generators/WhatsApp-Image-2026-04-29-at-11.45.02-PM.jpeg" alt="500kVA Generator Project" onerror="this.style.display='none';document.getElementById('pd-fallback').style.display='flex'"/>
-      <div id="pd-fallback" class="pd-hero-img-fallback" style="display:none"><i class="fa fa-bolt" style="color:#0ea5e9;font-size:4rem"></i></div>
+      <img class="pd-hero-img" id="pd-hero-img" src="" alt="Project" style="display:none"/>
+      <div id="pd-fallback" class="pd-hero-img-fallback" style="display:flex"><i class="fa fa-bolt" style="color:#0ea5e9;font-size:4rem"></i></div>
     </div>
 
     <div class="pd-layout">
       <!-- Left: Description -->
       <div class="reveal-left">
-        <div class="pd-tags">
-          <span class="pd-tag-badge">Generator</span>
-          <span class="pd-tag-badge">Industrial</span>
-          <span class="pd-tag-badge">Completed</span>
-        </div>
+        <div class="pd-tags" id="pd-tags"></div>
         <h2 class="section-title" style="font-size:2rem">Project <span>Overview</span></h2>
         <div class="divider"></div>
-        <p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">This project involved the supply, delivery, installation, and commissioning of a 500kVA Cummins diesel generator for a large commercial complex in DHA Phase 6, Karachi. The client required a reliable standby power solution capable of supporting the entire building load — including lifts, HVAC, commercial units, and common area lighting — during KESC outages.</p>
-        <p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">The project scope included civil foundation work, acoustic enclosure fabrication, a 500-litre sub-base fuel tank, automatic transfer switch panel integration, earthing system, and full load testing at site. The system was designed for an automatic switchover time of less than 10 seconds from utility failure.</p>
-        <p style="color:var(--muted);line-height:1.85;font-size:0.97rem">The installation was completed within 12 working days, on schedule and within budget. A 2-year annual maintenance contract was also signed at project completion, ensuring the system remains in peak condition.</p>
-
-        <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:700;margin-top:32px;margin-bottom:16px">Challenges & Solutions</h3>
-        <div style="display:flex;flex-direction:column;gap:12px">
-          <div style="background:var(--glass2);border:1px solid var(--border);border-radius:8px;padding:16px;display:flex;gap:14px;align-items:flex-start">
-            <span style="flex-shrink:0"><i class="fa fa-exclamation-triangle" style="color:var(--blue);font-size:1.1rem"></i></span>
-            <div><strong style="font-size:0.9rem;display:block;margin-bottom:4px">Limited Installation Space</strong><span style="font-size:0.84rem;color:var(--muted)">The basement plant room had restricted access. We coordinated a custom crane lift to position the generator precisely, completing the placement in under 4 hours.</span></div>
-          </div>
-          <div style="background:var(--glass2);border:1px solid var(--border);border-radius:8px;padding:16px;display:flex;gap:14px;align-items:flex-start">
-            <span style="flex-shrink:0"><i class="fa fa-exclamation-triangle" style="color:var(--blue);font-size:1.1rem"></i></span>
-            <div><strong style="font-size:0.9rem;display:block;margin-bottom:4px">Complex Load Synchronization</strong><span style="font-size:0.84rem;color:var(--muted)">Existing building electrical system required custom ATS programming to manage lift priority loads and prevent inrush current issues on startup.</span></div>
-          </div>
-        </div>
+        <div id="pd-description"></div>
 
         <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.3rem;font-weight:700;margin-top:32px;margin-bottom:16px">Project Images</h3>
-        <div class="img-gallery">
-          <img src="images/generators/WhatsApp-Image-2026-04-29-at-11.45.02-PM.jpeg" alt="Generator" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=400&q=80'"/>
-          <img src="images/generators/WhatsApp-Image-2026-04-29-at-11.45.03-PM.jpeg" alt="Generator" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1467533003447-e295ff1b0435?w=400&q=80'"/>
-          <img src="images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.30-PM.jpeg" alt="ATS Panel" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&q=80'"/>
-          <img src="images/generators/WhatsApp-Image-2026-04-29-at-11.50.17-PM.jpeg" alt="Generator" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=400&q=80'"/>
-        </div>
+        <div class="img-gallery" id="pd-gallery"></div>
       </div>
 
       <!-- Right: Meta -->
       <div class="reveal-right">
         <div class="pd-meta">
           <h4>Project Details</h4>
-          <div class="pd-meta-row"><span>Project Type</span><span>Generator Installation</span></div>
-          <div class="pd-meta-row"><span>Capacity</span><span>500 kVA</span></div>
-          <div class="pd-meta-row"><span>Brand</span><span>Cummins</span></div>
-          <div class="pd-meta-row"><span>Client</span><span>Commercial Complex</span></div>
-          <div class="pd-meta-row"><span>Location</span><span>DHA Phase 6, Karachi</span></div>
-          <div class="pd-meta-row"><span>Duration</span><span>12 Working Days</span></div>
-          <div class="pd-meta-row"><span>Completion</span><span>March 2024</span></div>
-          <div class="pd-meta-row"><span>Status</span><span style="color:#10b981"><i class="fa fa-check-circle" style="margin-right:4px"></i>Completed</span></div>
+          <div id="pd-meta-rows"></div>
           <a href="contact.html#quote" class="btn btn-primary" style="width:100%;justify-content:center;margin-top:20px"><i class="fa fa-bolt"></i> Similar Project Quote</a>
         </div>
         <div style="background:var(--glass2);border:1px solid var(--border);border-radius:var(--radius);padding:24px;margin-top:20px">
           <h4 style="font-family:'Barlow Condensed',sans-serif;font-size:1rem;font-weight:700;margin-bottom:14px">Scope of Work</h4>
-          <ul style="display:flex;flex-direction:column;gap:8px">
-            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>Generator supply & transport</li>
-            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>Civil foundation & mounting</li>
-            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>Acoustic enclosure</li>
-            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>500L sub-base fuel tank</li>
-            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>ATS panel integration</li>
-            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>Earthing system</li>
-            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>Load testing & commissioning</li>
-            <li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>Annual maintenance contract</li>
-          </ul>
+          <ul id="pd-scope" style="display:flex;flex-direction:column;gap:8px"></ul>
         </div>
       </div>
     </div>
@@ -124,26 +85,173 @@
     <div style="margin-top:60px">
       <h3 class="section-title" style="font-size:1.8rem">More <span>Projects</span></h3>
       <div class="divider"></div>
-      <div class="grid-3" style="margin-top:24px">
-        <div class="project-card reveal d1">
-          <img src="images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.30-PM.jpeg" alt="ATS Panel" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80'"/>
-          <div class="project-overlay"><div class="proj-tag">Electrical</div><h3>ATS Panel Integration</h3><p>Clifton Commercial Building</p></div>
-        </div>
-        <div class="project-card reveal d2">
-          <img src="" alt="Solar" onerror="this.src='https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=600&q=80'"/>
-          <div class="project-overlay"><div class="proj-tag">Solar</div><h3>100kW Solar System</h3><p>SITE Industrial Warehouse</p></div>
-        </div>
-        <div class="project-card reveal d3">
-          <img src="images/generators/WhatsApp-Image-2026-04-29-at-11.45.03-PM-1.jpeg" alt="Generator" onerror="this.src='https://images.unsplash.com/photo-1467533003447-e295ff1b0435?w=600&q=80'"/>
-          <div class="project-overlay"><div class="proj-tag">Generator</div><h3>200kVA Hospital Generator</h3><p>Gulshan-e-Iqbal</p></div>
-        </div>
-      </div>
+      <div class="grid-3" id="pd-related" style="margin-top:24px"></div>
       <div class="text-center" style="margin-top:36px">
         <a href="projects.html" class="btn btn-outline"><i class="fa fa-th"></i> All Projects</a>
       </div>
     </div>
   </div>
 </section>
+
+<script>
+const PROJECTS = {
+  1: {
+    title: "500kVA Diesel Generator",
+    titleHtml: "500kVA Generator <span>Installation</span>",
+    subtitle: "Commercial Complex — DHA Phase 6, Karachi",
+    heroImg: "images/generators/WhatsApp-Image-2026-04-29-at-11.45.02-PM.jpeg",
+    tags: ["Generator", "Industrial", "Completed"],
+    description: `<p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">This project involved the supply, delivery, installation, and commissioning of a 500kVA Cummins diesel generator for a large commercial complex in DHA Phase 6, Karachi. The client required a reliable standby power solution capable of supporting the entire building load during KESC outages.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">The project scope included civil foundation work, acoustic enclosure fabrication, a 500-litre sub-base fuel tank, ATS panel integration, earthing system, and full load testing. Switchover time was designed for under 10 seconds.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem">Completed within 12 working days, on schedule and within budget. A 2-year annual maintenance contract was signed at completion.</p>`,
+    gallery: ["images/generators/WhatsApp-Image-2026-04-29-at-11.45.02-PM.jpeg","images/generators/WhatsApp-Image-2026-04-29-at-11.45.03-PM.jpeg","images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.30-PM.jpeg","images/generators/WhatsApp-Image-2026-04-29-at-11.50.17-PM.jpeg"],
+    meta: [["Project Type","Generator Installation"],["Capacity","500 kVA"],["Brand","Cummins"],["Client","Commercial Complex"],["Location","DHA Phase 6, Karachi"],["Duration","12 Working Days"],["Status","✅ Completed"]],
+    scope: ["Generator supply & transport","Civil foundation & mounting","Acoustic enclosure","500L sub-base fuel tank","ATS panel integration","Earthing system","Load testing & commissioning","Annual maintenance contract"]
+  },
+  2: {
+    title: "100kW Rooftop Solar System",
+    titleHtml: "100kW Rooftop <span>Solar System</span>",
+    subtitle: "Industrial Warehouse — SITE Area, Karachi",
+    heroImg: "images/solar/WhatsApp-Image-2026-04-29-at-11.41.52-PM.jpeg",
+    tags: ["Solar", "Industrial", "Completed"],
+    description: `<p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">A 100kW grid-tied solar power system was designed and installed on the rooftop of an industrial warehouse in SITE Area, Karachi. The system was engineered to offset the facility's peak daytime electricity consumption and reduce monthly KESC billing significantly.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">The installation included 250 high-efficiency monocrystalline panels, 3-phase string inverters, DC/AC cabling, net metering setup, and monitoring software for real-time performance tracking.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem">The project was completed within 18 working days and the system achieved net metering approval from KESC within 30 days of commissioning.</p>`,
+    gallery: ["images/solar/WhatsApp-Image-2026-04-29-at-11.41.52-PM.jpeg","images/solar/WhatsApp-Image-2026-04-29-at-11.41.52-PM-1.jpeg","images/solar/WhatsApp-Image-2026-04-29-at-11.41.53-PM.jpeg","images/solar/WhatsApp-Image-2026-04-29-at-11.41.53-PM-1.jpeg"],
+    meta: [["Project Type","Solar Installation"],["Capacity","100 kW"],["Panels","250 Monocrystalline"],["Client","Industrial Warehouse"],["Location","SITE Area, Karachi"],["Duration","18 Working Days"],["Status","✅ Completed"]],
+    scope: ["Site survey & solar design","Panel procurement & delivery","Rooftop mounting structure","DC cabling & combiner box","3-phase string inverters","AC distribution & protection","Net metering application","Performance monitoring setup"]
+  },
+  3: {
+    title: "ATS Panel Integration",
+    titleHtml: "ATS Panel <span>Integration</span>",
+    subtitle: "Commercial Building — Clifton, Karachi",
+    heroImg: "images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.30-PM.jpeg",
+    tags: ["Electrical", "ATS Panel", "Completed"],
+    description: `<p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">This project involved the design, fabrication, and installation of a custom Automatic Transfer Switch (ATS) panel for a multi-floor commercial building in Clifton, Karachi. The ATS was integrated with an existing generator to ensure seamless power transfer during utility outages.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">The panel included intelligent load management, manual override capability, LED indication, and remote monitoring connectivity. All components were sourced from certified brands meeting IEC standards.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem">Installation and commissioning were completed in 7 working days with zero downtime to the building's existing electrical systems.</p>`,
+    gallery: ["images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.30-PM.jpeg","images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.30-PM-1.jpeg","images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.31-PM.jpeg"],
+    meta: [["Project Type","ATS Panel"],["Panel Rating","400A / 3-Phase"],["Standard","IEC 60947"],["Client","Commercial Building"],["Location","Clifton, Karachi"],["Duration","7 Working Days"],["Status","✅ Completed"]],
+    scope: ["Load assessment & panel design","Panel fabrication","ATS controller programming","Generator interface wiring","Load priority configuration","Site installation & testing","Handover & training"]
+  },
+  4: {
+    title: "200kVA Generator Installation",
+    titleHtml: "200kVA Generator <span>Installation</span>",
+    subtitle: "Hospital — Gulshan-e-Iqbal, Karachi",
+    heroImg: "images/generators/WhatsApp-Image-2026-04-29-at-11.45.03-PM.jpeg",
+    tags: ["Generator", "Healthcare", "Completed"],
+    description: `<p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">A critical power backup solution was designed and installed for a hospital in Gulshan-e-Iqbal. The 200kVA generator was selected to provide uninterrupted power to essential medical equipment, operating theaters, ICU, and emergency lighting.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">Given the critical nature of the application, the system was configured with a sub-3-second transfer time via a dedicated medical-grade ATS panel. Acoustic treatment was applied to minimize noise impact on patients.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem">Installation was performed during off-peak hours to prevent disruption to hospital operations. Full commissioning and staff training were completed within 10 days.</p>`,
+    gallery: ["images/generators/WhatsApp-Image-2026-04-29-at-11.45.03-PM.jpeg","images/generators/WhatsApp-Image-2026-04-29-at-11.45.03-PM-1.jpeg","images/generators/WhatsApp-Image-2026-04-29-at-11.45.02-PM.jpeg"],
+    meta: [["Project Type","Generator Installation"],["Capacity","200 kVA"],["Application","Healthcare / Hospital"],["Client","Private Hospital"],["Location","Gulshan-e-Iqbal, Karachi"],["Duration","10 Working Days"],["Status","✅ Completed"]],
+    scope: ["Site assessment & load study","Generator supply & transport","Acoustic enclosure installation","Medical-grade ATS panel","Priority load wiring","Sub-3-second transfer configuration","Staff training & handover"]
+  },
+  5: {
+    title: "Control Panel Upgrade",
+    titleHtml: "Control Panel <span>Upgrade</span>",
+    subtitle: "Factory — Korangi Industrial Area, Karachi",
+    heroImg: "images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.31-PM.jpeg",
+    tags: ["Electrical", "Industrial", "Completed"],
+    description: `<p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">An aging electrical control panel at a manufacturing facility in Korangi Industrial Area was completely replaced and upgraded to meet modern safety standards and accommodate expanded production capacity.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">The new panel included updated MCCBs, contactors, overload relays, PLC-based motor controls, and improved busbar sizing. All wiring was replaced with fire-rated cables and properly labeled.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem">The upgrade eliminated frequent tripping issues and improved overall production uptime by an estimated 30%. Work was phased to maintain factory operations throughout the upgrade.</p>`,
+    gallery: ["images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.31-PM.jpeg","images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.30-PM.jpeg","images/ats-panels/WhatsApp-Image-2026-04-29-at-11.48.30-PM-1.jpeg"],
+    meta: [["Project Type","Panel Upgrade"],["Panel Rating","630A / 3-Phase"],["Client","Manufacturing Factory"],["Location","Korangi Industrial Area"],["Duration","14 Working Days"],["Status","✅ Completed"]],
+    scope: ["Existing panel audit","New panel design & fabrication","MCCB & contactor replacement","PLC-based motor controls","Fire-rated cable replacement","Phase-wise installation","Testing, labeling & handover"]
+  },
+  6: {
+    title: "Passenger Elevator Installation",
+    titleHtml: "Passenger Elevator <span>Installation</span>",
+    subtitle: "Residential Tower — Bahria Town, Karachi",
+    heroImg: "images/elevators/WhatsApp-Image-2026-04-29-at-11.39.15-PM.jpeg",
+    tags: ["Elevator", "Residential", "Completed"],
+    description: `<p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">A passenger elevator system was supplied, installed, and commissioned in a multi-storey residential tower in Bahria Town, Karachi. The elevator was selected to match the architectural design of the building while providing reliable, smooth vertical transportation for residents.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">The scope included civil shaft preparation coordination, elevator machine room setup, cab fitting and finishing, safety device installation, and controller programming. The unit features variable frequency drive (VFD) technology for energy efficiency and smooth ride quality.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem">The project was completed in 21 working days and passed all safety inspections. A maintenance contract was established for ongoing annual servicing.</p>`,
+    gallery: ["images/elevators/WhatsApp-Image-2026-04-29-at-11.39.15-PM.jpeg","images/elevators/WhatsApp-Image-2026-04-29-at-11.39.16-PM.jpeg","images/elevators/WhatsApp-Image-2026-04-29-at-11.39.16-PM-1.jpeg","images/elevators/WhatsApp-Image-2026-04-29-at-11.39.17-PM.jpeg"],
+    meta: [["Project Type","Elevator Installation"],["Capacity","8 Persons / 630 kg"],["Speed","1.0 m/s"],["Floors","Ground + 7"],["Location","Bahria Town, Karachi"],["Duration","21 Working Days"],["Status","✅ Completed"]],
+    scope: ["Site survey & shaft design","Elevator supply & delivery","Guide rail installation","Machine room setup","Cab fitting & finishing","Safety device installation","VFD controller programming","Safety inspection & handover"]
+  },
+  7: {
+    title: "50kW Grid-Tied Solar System",
+    titleHtml: "50kW Grid-Tied <span>Solar System</span>",
+    subtitle: "Textile Mill — Landhi, Karachi",
+    heroImg: "images/solar/WhatsApp-Image-2026-04-29-at-11.41.52-PM-1.jpeg",
+    tags: ["Solar", "Industrial", "Completed"],
+    description: `<p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">A 50kW grid-tied solar energy system was installed at a textile manufacturing facility in Landhi Industrial Area, Karachi. The project was designed to reduce the mill's dependence on grid power during peak production hours and lower monthly electricity costs.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">The installation comprised 125 high-efficiency panels on a custom rooftop mounting structure, a 50kW 3-phase inverter, net metering switchgear, and a remote monitoring system accessible via mobile app.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem">The system has been operating without fault since commissioning and is estimated to save the client over Rs. 180,000 per month in electricity costs.</p>`,
+    gallery: ["images/solar/WhatsApp-Image-2026-04-29-at-11.41.52-PM-1.jpeg","images/solar/WhatsApp-Image-2026-04-29-at-11.41.52-PM.jpeg","images/solar/WhatsApp-Image-2026-04-29-at-11.41.53-PM.jpeg","images/solar/WhatsApp-Image-2026-04-29-at-11.41.53-PM-1.jpeg"],
+    meta: [["Project Type","Solar Installation"],["Capacity","50 kW"],["Panels","125 Monocrystalline"],["Client","Textile Mill"],["Location","Landhi, Karachi"],["Duration","14 Working Days"],["Status","✅ Completed"]],
+    scope: ["Rooftop survey & shading analysis","Panel & inverter procurement","Mounting structure fabrication","DC string wiring","Grid-tie inverter installation","Net metering switchgear","KESC net metering approval","Remote monitoring setup"]
+  },
+  8: {
+    title: "Annual Generator AMC",
+    titleHtml: "Annual Generator <span>AMC</span>",
+    subtitle: "School & College Complex — North Karachi",
+    heroImg: "images/generators/WhatsApp-Image-2026-04-29-at-11.50.17-PM.jpeg",
+    tags: ["Maintenance", "Education", "Ongoing"],
+    description: `<p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">A.N Power Engineering entered into an Annual Maintenance Contract (AMC) with a large school and college complex in North Karachi to maintain two generators (150kVA and 250kVA) servicing classrooms, labs, admin blocks, and security systems.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">The AMC covers scheduled quarterly servicing, emergency breakdown response within 4 hours, oil and filter replacements, battery maintenance, load bank testing, and comprehensive service reports after each visit.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem">The contract has been renewed for 3 consecutive years, reflecting the client's satisfaction with response time, service quality, and transparent reporting.</p>`,
+    gallery: ["images/generators/WhatsApp-Image-2026-04-29-at-11.50.17-PM.jpeg","images/generators/WhatsApp-Image-2026-04-29-at-11.50.17-PM-1.jpeg","images/generators/WhatsApp-Image-2026-04-29-at-11.45.02-PM.jpeg"],
+    meta: [["Contract Type","Annual AMC"],["Units Covered","150kVA + 250kVA"],["Response Time","≤ 4 Hours"],["Client","School & College Complex"],["Location","North Karachi"],["Contract Period","12 Months (Renewable)"],["Status","🔵 Ongoing"]],
+    scope: ["Quarterly scheduled servicing","Emergency breakdown response","Oil & filter replacement","Battery maintenance & testing","Coolant & belts inspection","Load bank testing","Detailed service reports","24/7 technical support"]
+  },
+  9: {
+    title: "1000kVA Rental Generator",
+    titleHtml: "1000kVA Rental <span>Generator</span>",
+    subtitle: "Major Event — Expo Centre Karachi",
+    heroImg: "images/new-generators/1000kva-perkins.jpeg",
+    tags: ["Generator", "Rental", "Completed"],
+    description: `<p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">A.N Power Engineering provided a 1000kVA Perkins diesel generator on rental basis for a large-scale corporate event held at Expo Centre Karachi. The generator served as the primary power source for the event, powering stage lighting, sound systems, air conditioning, and exhibition stalls across the venue.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:16px">Our team conducted a full load analysis prior to the event, deployed a dedicated on-site technician for the 3-day event duration, and provided 24-hour standby support. Fuel management and refueling were handled by our team throughout.</p><p style="color:var(--muted);line-height:1.85;font-size:0.97rem">The event ran without any power interruption. The client subsequently contracted A.N Power for all future events at the venue.</p>`,
+    gallery: ["images/new-generators/1000kva-perkins.jpeg","images/new-generators/WhatsApp-Image-2026-04-29-at-11.51.40-PM.jpeg","images/new-generators/WhatsApp-Image-2026-04-29-at-11.51.41-PM.jpeg","images/new-generators/WhatsApp-Image-2026-04-29-at-11.51.42-PM.jpeg"],
+    meta: [["Project Type","Generator Rental"],["Capacity","1000 kVA"],["Brand","Perkins"],["Client","Corporate Event Organizer"],["Location","Expo Centre, Karachi"],["Duration","3 Days"],["Status","✅ Completed"]],
+    scope: ["Pre-event load analysis","Generator transport & positioning","On-site electrical connections","Distribution panel setup","Dedicated on-site technician","24-hour standby coverage","Fuel supply management","Post-event removal & restoration"]
+  }
+};
+
+(function() {
+  const id = parseInt(new URLSearchParams(window.location.search).get('id')) || 1;
+  const p = PROJECTS[id] || PROJECTS[1];
+
+  // Hero
+  document.getElementById('pd-breadcrumb').textContent = p.title;
+  document.getElementById('pd-title').innerHTML = p.titleHtml;
+  document.getElementById('pd-subtitle').textContent = p.subtitle;
+  document.title = p.title + ' | A.N Power Engineering & Services';
+
+  // Hero image - show after load
+  const heroImg = document.getElementById('pd-hero-img');
+  const fallback = document.getElementById('pd-fallback');
+  heroImg.onload = function() {
+    heroImg.style.display = 'block';
+    fallback.style.display = 'none';
+  };
+  heroImg.onerror = function() {
+    heroImg.style.display = 'none';
+    fallback.style.display = 'flex';
+  };
+  heroImg.src = p.heroImg;
+  heroImg.alt = p.title;
+
+  // Tags
+  document.getElementById('pd-tags').innerHTML = p.tags.map(t => `<span class="pd-tag-badge">${t}</span>`).join('');
+
+  // Description
+  document.getElementById('pd-description').innerHTML = p.description;
+
+  // Gallery - load images properly
+  const galleryDiv = document.getElementById('pd-gallery');
+  galleryDiv.innerHTML = p.gallery.map(src =>
+    `<img src="${src}" alt="${p.title}" loading="lazy" style="width:100%;height:180px;object-fit:cover;border-radius:8px;border:1px solid var(--border);cursor:pointer;transition:var(--transition)" onerror="this.style.opacity='0.3'"/>`
+  ).join('');
+
+  // Meta rows
+  document.getElementById('pd-meta-rows').innerHTML = p.meta.map(([k,v]) =>
+    `<div class="pd-meta-row"><span>${k}</span><span>${v}</span></div>`
+  ).join('');
+
+  // Scope
+  document.getElementById('pd-scope').innerHTML = p.scope.map(s =>
+    `<li style="font-size:0.84rem;color:var(--muted);display:flex;gap:8px;align-items:center"><i class="fa fa-check" style="color:var(--blue)"></i>${s}</li>`
+  ).join('');
+
+  // Related projects (show 3 others)
+  const others = Object.entries(PROJECTS).filter(([k]) => parseInt(k) !== id).slice(0,3);
+  document.getElementById('pd-related').innerHTML = others.map(([k,rp], i) =>
+    `<div class="project-card reveal d${i+1}" onclick="window.location='project-detail.html?id=${k}'" style="cursor:pointer">
+      <img src="${rp.heroImg}" alt="${rp.title}" onerror="this.src='https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&q=80'"/>
+      <div class="project-overlay"><div class="proj-tag">${rp.tags[0]}</div><h3>${rp.title}</h3><p>${rp.subtitle}</p></div>
+    </div>`
+  ).join('');
+})();
+</script>
 
 <footer id="footer">
   <div class="footer-grid container"><div class="footer-brand"><a href="index.html" class="nav-brand"><svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/><path d="M20 6L8 20h9v14l12-14h-9V6z" fill="#0ea5e9"/></svg><div class="brand-text"><div class="top">A.N Power</div><div class="sub">Engineering & Services</div></div></a><p>Karachi's trusted power engineering company since 2009.</p><div class="socials"><a href="#"><i class="fab fa-whatsapp"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="mailto:anpowerengineering@hotmail.com"><i class="fa fa-envelope"></i></a></div></div>
