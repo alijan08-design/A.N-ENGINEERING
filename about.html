@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>About Us | A.N Power Engineering & Services</title>
+<link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+.mv-grid { display:grid; grid-template-columns:1fr 1fr; gap:28px; margin-top:40px; }
+.mv-card { background:var(--glass2); border:1px solid var(--border); border-radius:var(--radius); padding:36px; position:relative; overflow:hidden; }
+.mv-card::before { content:''; position:absolute; top:-30px; right:-30px; width:120px; height:120px; border-radius:50%; background:radial-gradient(circle, rgba(14,165,233,0.1), transparent); }
+.mv-card .mv-icon { font-size:2rem; margin-bottom:16px; width:56px; height:56px; background:rgba(14,165,233,0.1); border:1px solid rgba(14,165,233,0.2); border-radius:10px; display:flex; align-items:center; justify-content:center; }
+.mv-card h3 { font-family:'Barlow Condensed',sans-serif; font-size:1.5rem; font-weight:800; color:var(--blue2); margin-bottom:12px; }
+.mv-card p { color:var(--muted); line-height:1.8; font-size:0.95rem; }
+.value-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:20px; margin-top:50px; }
+.value-item { text-align:center; padding:28px 20px; background:var(--glass2); border:1px solid var(--border); border-radius:var(--radius); transition:var(--transition); }
+.value-item:hover { transform:translateY(-4px); border-color:rgba(14,165,233,0.4); box-shadow:var(--glow); }
+.value-item .vi { font-size:1.5rem; margin-bottom:12px; width:52px; height:52px; background:rgba(14,165,233,0.1); border:1px solid rgba(14,165,233,0.2); border-radius:50%; display:flex; align-items:center; justify-content:center; margin-left:auto; margin-right:auto; }
+.value-item h4 { font-family:'Barlow Condensed',sans-serif; font-size:1.1rem; font-weight:700; color:var(--white); }
+.value-item p { font-size:0.82rem; color:var(--muted); margin-top:6px; line-height:1.6; }
+.about-two-col { display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start; }
+@media(max-width:768px){ .mv-grid,.about-two-col,.value-grid{grid-template-columns:1fr} }
+</style>
+</head>
+<body>
+<div id="preloader"><div class="pre-logo">A·N POWER</div><div class="pre-bar"><div class="pre-bar-fill"></div></div></div>
+
+<nav id="navbar">
+  <a href="index.html" class="nav-brand">
+    <svg class="brand-icon" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/><path d="M20 6L8 20h9v14l12-14h-9V6z" fill="#0ea5e9" stroke="#38bdf8" stroke-width="0.5"/></svg>
+    <div class="brand-text"><div class="top">A.N Power</div><div class="sub">Engineering & Services</div></div>
+  </a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="has-dropdown"><a href="services.html">Services</a>
+      <div class="dropdown">
+        <a href="service-detail.html?s=generator">Generator Sales & Rental</a>
+        <a href="service-detail.html?s=solar">Solar Energy Systems</a>
+        <a href="service-detail.html?s=elevator">Elevators & Escalators</a>
+        <a href="service-detail.html?s=ats">ATS Panels</a>
+        <a href="service-detail.html?s=maintenance">Maintenance Contracts</a>
+        <a href="service-detail.html?s=rental">Rental Services</a>
+      </div>
+    </li>
+    <li class="has-dropdown"><a href="projects.html">Projects</a>
+      <div class="dropdown">
+        <a href="projects.html?cat=electrical">Electrical Projects</a>
+        <a href="projects.html?cat=industrial">Industrial Projects</a>
+        <a href="projects.html?cat=maintenance">Maintenance Projects</a>
+      </div>
+    </li>
+    <li><a href="clients.html">Clients</a></li>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <a href="contact.html#quote" class="btn-quote">Get a Quote</a>
+  <div class="hamburger"><span></span><span></span><span></span></div>
+</nav>
+<div class="mobile-nav">
+  <div class="mob-section"><div class="mob-label">Navigation</div>
+    <a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a>
+    <a href="projects.html">Projects</a><a href="gallery.html">Gallery</a><a href="clients.html">Clients</a>
+    <a href="careers.html">Careers</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a>
+  </div>
+  <a href="contact.html#quote" class="btn btn-primary btn-quote">Get a Quote</a>
+</div>
+
+<!-- Page Hero -->
+<section class="page-hero">
+  <div class="page-hero-inner container">
+    <div class="breadcrumb"><a href="index.html">Home</a><span>/</span><span>About Us</span></div>
+    <div class="tag">Our Story</div>
+    <h1>About <span>A.N Power</span></h1>
+    <p>15+ years of engineering excellence, serving Karachi and Pakistan with reliable power solutions.</p>
+  </div>
+</section>
+
+<!-- Company Intro -->
+<section class="section">
+  <div class="container">
+    <div class="about-two-col">
+      <div class="reveal-left">
+        <div class="tag">Who We Are</div>
+        <h2 class="section-title">Built on Trust,<br/><span>Driven by Excellence</span></h2>
+        <div class="divider"></div>
+        <p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:18px">A.N Power Engineering & Services was established on March 5, 2009, with a singular vision: to provide Pakistan's businesses and communities with reliable, high-quality engineering solutions they can depend on.</p>
+        <p style="color:var(--muted);line-height:1.85;font-size:0.97rem;margin-bottom:18px">Starting from our roots in DHA Phase 5, Karachi, we have grown into one of the city's most trusted names in power engineering — handling everything from diesel generator sales and rentals to solar energy systems, elevator installations, and comprehensive maintenance contracts.</p>
+        <p style="color:var(--muted);line-height:1.85;font-size:0.97rem;">Our team of experienced engineers and technicians brings decades of combined expertise, a commitment to using only genuine parts, and the dedication to be available 24/7 when our clients need us most.</p>
+        <div style="display:flex;gap:16px;margin-top:30px;flex-wrap:wrap">
+          <a href="contact.html" class="btn btn-primary"><i class="fa fa-envelope"></i> Get in Touch</a>
+          <a href="services.html" class="btn btn-outline">Our Services</a>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div style="background:var(--glass2);border:1px solid var(--border);border-radius:var(--radius);padding:36px">
+          <h3 style="font-family:'Barlow Condensed',sans-serif;font-size:1.4rem;font-weight:800;margin-bottom:24px;color:var(--blue2)">Why Choose Us?</h3>
+          <div style="display:flex;flex-direction:column;gap:18px">
+            <div style="display:flex;gap:16px;align-items:flex-start">
+              <div style="width:40px;height:40px;background:rgba(14,165,233,0.12);border:1px solid rgba(14,165,233,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fa fa-check-circle" style="color:#0ea5e9;font-size:1.1rem"></i></div>
+              <div><strong style="display:block;font-size:0.95rem">Genuine Parts & Products</strong><span style="font-size:0.85rem;color:var(--muted)">We never compromise on quality — all equipment and parts are sourced from authorized channels.</span></div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start">
+              <div style="width:40px;height:40px;background:rgba(14,165,233,0.12);border:1px solid rgba(14,165,233,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fa fa-bolt" style="color:#0ea5e9;font-size:1.1rem"></i></div>
+              <div><strong style="display:block;font-size:0.95rem">24/7 Emergency Support</strong><span style="font-size:0.85rem;color:var(--muted)">Power doesn't wait — neither do we. Our team is on call around the clock for urgent situations.</span></div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start">
+              <div style="width:40px;height:40px;background:rgba(14,165,233,0.12);border:1px solid rgba(14,165,233,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fa fa-award" style="color:#0ea5e9;font-size:1.1rem"></i></div>
+              <div><strong style="display:block;font-size:0.95rem">15+ Years Experience</strong><span style="font-size:0.85rem;color:var(--muted)">Over 500 completed projects across Karachi and Pakistan — experience you can trust.</span></div>
+            </div>
+            <div style="display:flex;gap:16px;align-items:flex-start">
+              <div style="width:40px;height:40px;background:rgba(14,165,233,0.12);border:1px solid rgba(14,165,233,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;flex-shrink:0"><i class="fa fa-tags" style="color:#0ea5e9;font-size:1.1rem"></i></div>
+              <div><strong style="display:block;font-size:0.95rem">Competitive Pricing</strong><span style="font-size:0.85rem;color:var(--muted)">Fair, transparent pricing with no hidden charges. We work to fit your budget without sacrificing quality.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Mission & Vision -->
+<section class="section" style="background:var(--dark2);padding:80px 5%">
+  <div class="container">
+    <div class="text-center reveal">
+      <div class="tag">Our Direction</div>
+      <h2 class="section-title">Mission & <span>Vision</span></h2>
+      <div class="divider"></div>
+    </div>
+    <div class="mv-grid">
+      <div class="mv-card reveal d1">
+        <div class="mv-icon"><i class="fa fa-bullseye" style="color:#0ea5e9"></i></div>
+        <h3>Our Mission</h3>
+        <p>To deliver reliable, efficient, and cost-effective power and engineering solutions that empower Pakistani businesses and communities to thrive — with uncompromising commitment to quality, safety, and customer satisfaction in every project we undertake.</p>
+      </div>
+      <div class="mv-card reveal d2">
+        <div class="mv-icon"><i class="fa fa-eye" style="color:#0ea5e9"></i></div>
+        <h3>Our Vision</h3>
+        <p>To be Pakistan's leading integrated power engineering company — recognized for innovation, reliability, and excellence — driving the nation's transition towards sustainable energy while building lasting partnerships that power a brighter future.</p>
+      </div>
+    </div>
+    <div class="value-grid">
+      <div class="value-item reveal d1"><div class="vi"><i class="fa fa-shield-alt" style="color:#0ea5e9"></i></div><h4>Integrity</h4><p>Honest dealing, transparent pricing, and accountability in every interaction.</p></div>
+      <div class="value-item reveal d2"><div class="vi"><i class="fa fa-cogs" style="color:#0ea5e9"></i></div><h4>Precision</h4><p>Engineering excellence with attention to every detail, every time.</p></div>
+      <div class="value-item reveal d3"><div class="vi"><i class="fa fa-handshake" style="color:#0ea5e9"></i></div><h4>Partnership</h4><p>Long-term relationships built on trust and consistent delivery.</p></div>
+      <div class="value-item reveal d1"><div class="vi"><i class="fa fa-leaf" style="color:#0ea5e9"></i></div><h4>Sustainability</h4><p>Committed to green energy solutions for a cleaner Pakistan.</p></div>
+      <div class="value-item reveal d2"><div class="vi"><i class="fa fa-lightbulb" style="color:#0ea5e9"></i></div><h4>Innovation</h4><p>Staying at the forefront of technology to offer the best solutions.</p></div>
+      <div class="value-item reveal d3"><div class="vi"><i class="fa fa-user-tie" style="color:#0ea5e9"></i></div><h4>Expertise</h4><p>Certified engineers with decades of hands-on field experience.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Timeline -->
+<section class="section">
+  <div class="container">
+    <div class="about-two-col">
+      <div class="reveal-left">
+        <div class="tag">Our Journey</div>
+        <h2 class="section-title">A Decade of <span>Growth</span></h2>
+        <div class="divider"></div>
+        <div class="timeline" style="margin-top:30px">
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="year">2009</div><h4>Company Founded</h4><p>Established March 5, 2009, in DHA Phase 5, Karachi with a focus on generator sales and maintenance.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="year">2011</div><h4>Elevator Division Launched</h4><p>Expanded services to include elevator and escalator installation and maintenance contracts.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="year">2014</div><h4>ATS Panel Expertise</h4><p>Became one of Karachi's leading suppliers and installers of Automatic Transfer Switch panels.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="year">2018</div><h4>Solar Division Launched</h4><p>Entered the renewable energy market with full solar panel installation and supply services.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="year">2021</div><h4>500+ Projects Milestone</h4><p>Achieved the milestone of 500 completed projects across residential, commercial, and industrial sectors.</p></div>
+          <div class="timeline-item"><div class="timeline-dot"></div><div class="year">2024</div><h4>Expanded Operations</h4><p>Grew our team of engineers, expanded rental fleet, and strengthened supply chain partnerships.</p></div>
+        </div>
+      </div>
+      <div class="reveal-right">
+        <div class="tag">Our Team</div>
+        <h2 class="section-title">Meet Our <span>Leaders</span></h2>
+        <div class="divider"></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:10px">
+          <div class="team-card"><div class="team-avatar">AN</div><h3>A.N. Ashraf</h3><div class="role">Founder & CEO</div></div>
+          <div class="team-card"><div class="team-avatar">MA</div><h3>M. Asif</h3><div class="role">Chief Engineer</div></div>
+          <div class="team-card"><div class="team-avatar">ZA</div><h3>Zafar Ali</h3><div class="role">Solar Division Head</div></div>
+          <div class="team-card"><div class="team-avatar">RA</div><h3>Rehman A.</h3><div class="role">Service Manager</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="section-sm" style="padding:60px 5%">
+  <div class="container">
+    <div class="cta-banner reveal">
+      <h2>Start Your Project with <span style="color:var(--blue2)">A.N Power</span></h2>
+      <p>Reach out for a free engineering consultation and quote tailored to your specific requirements.</p>
+      <div class="btns"><a href="contact.html" class="btn btn-primary"><i class="fa fa-bolt"></i> Contact Us</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer">
+  <div class="footer-grid container">
+    <div class="footer-brand">
+      <a href="index.html" class="nav-brand"><svg width="36" height="36" viewBox="0 0 40 40" fill="none"><rect width="40" height="40" rx="8" fill="rgba(14,165,233,0.12)" stroke="rgba(14,165,233,0.3)" stroke-width="1"/><path d="M20 6L8 20h9v14l12-14h-9V6z" fill="#0ea5e9"/></svg><div class="brand-text"><div class="top">A.N Power</div><div class="sub">Engineering & Services</div></div></a>
+      <p>Karachi's trusted power engineering company since 2009. Delivering precision and excellence in every project.</p>
+      <div class="socials"><a href="#"><i class="fab fa-whatsapp"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="mailto:anpowerengineering@hotmail.com"><i class="fa fa-envelope"></i></a></div>
+    </div>
+    <div class="footer-col"><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Services</a></li><li><a href="projects.html">Projects</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="careers.html">Careers</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div class="footer-col"><h4>Services</h4><ul><li><a href="service-detail.html?s=generator">Generator Sales</a></li><li><a href="service-detail.html?s=solar">Solar Systems</a></li><li><a href="service-detail.html?s=elevator">Elevators</a></li><li><a href="service-detail.html?s=ats">ATS Panels</a></li><li><a href="service-detail.html?s=maintenance">Maintenance</a></li><li><a href="service-detail.html?s=rental">Rental</a></li></ul></div>
+    <div class="footer-col"><h4>Contact</h4><ul class="footer-contact"><li><i class="fa fa-mobile-alt"></i><span>0301-2499709</span></li><li><i class="fa fa-mobile-alt"></i><span>0302-8289709</span></li><li><i class="fa fa-envelope"></i><a href="mailto:anpowerengineering@hotmail.com">anpowerengineering@hotmail.com</a></li><li><i class="fa fa-map-marker-alt"></i><span>Shop No 3/43/C, 24th Tauheed Commercial Street, Phase 5 DHA, Karachi</span></li></ul></div>
+  </div>
+  <div class="footer-bottom container"><span>© 2009–2026 <span>A.N Power Engineering & Services</span> | All Rights Reserved</span><span>Established March 5, 2009 | Serving Karachi for over 15 years</span></div>
+</footer>
+<div id="back-top"><i class="fa fa-chevron-up"></i></div>
+<a id="wa-float" href="https://wa.me/923028289709" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<script src="script.js"></script>
+</body>
+</html>
