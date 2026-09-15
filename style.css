@@ -240,6 +240,24 @@ button { cursor: pointer; border: none; background: none; }
 }
 .text-center .divider { margin: 16px auto 30px; }
 
+/* ── Workshop Location ────────────────────────────────────── */
+.workshop-location-inner {
+  display: flex; align-items: center; gap: 22px;
+  padding: 28px 32px;
+  background: var(--glass2); border: 1px solid var(--border);
+  border-left: 3px solid var(--blue); border-radius: var(--radius);
+}
+.workshop-location-icon {
+  width: 48px; height: 48px; flex: 0 0 48px;
+  display: flex; align-items: center; justify-content: center;
+  color: var(--blue2); background: rgba(14,165,233,0.12);
+  border-radius: 8px; font-size: 1.2rem;
+}
+.workshop-location .tag { margin-bottom: 6px; }
+.workshop-location .section-title { font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.workshop-address { color: var(--muted); margin-top: 8px; line-height: 1.6; }
+.workshop-location .btn { margin-left: auto; white-space: nowrap; }
+
 /* Buttons */
 .btn {
   display: inline-flex; align-items: center; gap: 8px;
@@ -1008,6 +1026,8 @@ button { cursor: pointer; border: none; background: none; }
   .hero-visual { display: none; }
   .hero-chips { display: none; }
   .ht-lg { font-size: clamp(2.4rem, 8vw, 3.5rem); }
+  .workshop-location-inner { align-items: flex-start; flex-wrap: wrap; }
+  .workshop-location .btn { margin-left: 70px; }
   .grid-3 { grid-template-columns: 1fr 1fr; }
   .grid-4 { grid-template-columns: 1fr 1fr; }
   .stats-grid { grid-template-columns: 1fr 1fr; }
